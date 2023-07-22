@@ -1,0 +1,134 @@
+.BannerContent {
+  background: url("/images/sistema/bannerHome.png") no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+
+  @media screen and (max-width: 1023px) {
+    background: url("/images/sistema/bannerHome.png") no-repeat center center;
+  }
+}
+
+.Banner {
+  display: flex;
+  color: #fff;
+  background: linear-gradient(
+    89.88deg,
+    rgba(255, 255, 255, 0.8) 43.83%,
+    rgba(255, 255, 255, 0.234375) 99.93%
+  );
+  height: 100%;
+}
+
+.BannerTextContainer {
+  margin-top: 120px;
+  bottom: auto;
+  z-index: 2;
+  max-width: 58vw;
+  padding: 0 6.5625vw;
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    color: #54595f;
+    margin-bottom: 5.46875vw;
+    b {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-family: "Alegreya SC", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #54595f;
+  }
+}
+
+.BannerHomeMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .BannerTextContainer {
+    max-width: 100%;
+    h2 {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .Banner {
+    .BannerImg {
+      span {
+        background: linear-gradient(
+          89.88deg,
+          rgba(255, 255, 255, 0.8) 100%,
+          rgba(255, 255, 255, 0.3) 99.93%
+        );
+      }
+    }
+    justify-content: center;
+    align-items: center;
+  }
+  .BannerHomeDesktop {
+    display: none;
+  }
+  .BannerHomeMobile {
+    display: block;
+  }
+  .BannerTextContainer {
+    top: auto;
+    h2 {
+      font-size: 26px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .BannerTextContainer {
+    h2 {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    p {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .BannerTextContainer {
+    h2 {
+      font-size: 60px;
+      line-height: 68px;
+      margin-top: 100px;
+    }
+    p {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+}

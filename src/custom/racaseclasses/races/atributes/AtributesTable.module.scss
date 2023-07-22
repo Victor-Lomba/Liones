@@ -1,0 +1,28 @@
+.atributesTable {
+    margin: 0 20px 0 0;
+    height: fit-content;
+
+    th,td {
+        background: #cccccca8;
+        border: 1px solid #00000045;
+        text-align: center;
+        padding: 4px 8px;
+        font-family: 'Scala Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #000000;
+        cursor: context-menu;
+        text-transform: capitalize;
+        &:hover {
+            background: #838383a8;
+        }
+    }
+
+    th {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}

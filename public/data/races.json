@@ -1,0 +1,591 @@
+{
+    "racesList": [
+        "HUMANO",
+        "ELFO",
+        "ELFO NEGRO",
+        "ORC",
+        "ANÃO",
+        "HALFLING",
+        "DRACONIANO",
+        "FADA",
+        "MEIO DEMÔNIO",
+        "MEIO ANJO",
+        "GOLEM",
+        "REPTILIANO",
+        "VAMPIRO",
+        "LOBISOMEM",
+        "ULVERARVINGER",
+        "KHAJIIT",
+        "MACACO",
+        "GORILA",
+        "ASURA",
+        "ENT",
+        "PREDADOR",
+        "ANCIÃO",
+        "SEREIA",
+        "MUTANT"
+    ],
+    "race": [
+        {
+            "name": "HUMANO",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": "1 em 3 atributos"
+                }
+            ],
+            "descricao": [
+                "A raça humana é a mais comum e versátil de todo o rpg, você pode muito bem encontrar humanos com quaisquer classes, tais como caçadores, guerreiros, ladinos e outros.", 
+                "Essa é a classe mais indicada para iniciantes de rpg visto que é uma raça neutra, não possuindo malefícios e destacando-se pela versatilidade e baixa complexidade.",
+                "Aparentemente os humanos são mais fracos que outras classes em disputas específicas porém a vantagem dos humanos se encontra na versatilidade, os mesmos não tem desvantagens naturais e nem mesmo armas específicas que os possa ferir mais do que outros seres.",
+                "Os humanos têm algumas vantagens como:",
+                "Dificilmente não são aceitos em lugares",
+                "Não tem impedimentos para adquirir perícias",
+                "Não tem selos contra-humanos",
+                "Não tem dificuldade em encontrar forjas visto que a maioria das forjas é feita para uso humano.",
+                "Não tem impedimentos em relação a armaduras ou armas",
+                "RECEBERÁ UM DOM DOS DEUSES, SENDO ELES:",
+                "Ops, achei: Facilidade de encontrar itens mágicos +2 nesses testes.",
+                "Dom da fala: O sujeito ganhará +2 em testes de convencimento de forma geral",
+                "O mercador: Se é pechincha que você quer é pechincha que terás, ganha +3 em testes para baixar o preço de algum produto",
+                "O pescador: Ganha +3 em testes de pescaria",
+                "O perito: o humano ganha +3 perícias a sua escolha",
+                "O duelista: Quando for lutar no 1v1 ganha +5 de iniciativa para começar o x1 com o pé direito",
+                "Todos os humanos instintivamente falam a linguagem comum e +2 linguagens."
+            ]
+        },
+        {
+            "name": "ELFO",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 1,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 2
+                }
+            ],
+            "descricao": [
+                "Dotados normalmente de arrogância e egocentrismo, os elfos são uma das criaturas mais antigas do planeta e grandes conhecedores das florestas.",
+                "Elfos  são uma raça mística com aparência similar aos humanos, geralmente belos(as) e loiros. São mais baixos e menos fortes, porém mais rápidos e habilidosos que os humanos. Há quem diga que são Semi-Deuses e Imortais.",
+                "São seres mágicos, ligados à natureza, o que os diferencia de Magos e Feiticeiros, que advém do estudo das artes arcanas por outras raças.",
+                "Bem na mira: o elfo naturalmente tem +1 de ac a cada 3 níveis. (passiva)",
+                "Foco élfico: Analisa um oponente e encontra seu ponto fraco, toda vez que acertar no ponto fraco (tem que passar em +3 da esquiva do inimigo) dará +2 de dano. Pode ser usado como movimento ou ação. Dura todo o combate. (+1 de dano a cada 4 níveis)",
+                "Falam linguagem élfica e comum."
+            ]
+        },
+        {
+            "name": "ELFO NEGRO",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 1,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 1
+                }
+            ],
+            "descricao": [
+                "Visão noturna - Os olhos do elfo negro se adaptaram com o tempo a lugares com pouca luz, logo, o mesmo tem a capacidade de enxergar no escuro.",
+                "Marca da maldição: Escolhe um aliado e o marca (não pode marcar a si mesmo). Todo dano sofrido pelo aliado marcado é refletido 50% de volta ao agressor (lembrando que só conta o dano que passar da armadura).",
+                "Falam linguagem élfica e comum."
+            ]
+        },
+        {
+            "name": "ORC",
+            "modificadores": [
+                {
+                    "forca": 3,
+                    "destreza": -1,
+                    "constituicao": 2,
+                    "carisma": 0,
+                    "inteligencia": -2,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Os orcs se diferem de trolls, goblins e ogros pois são os mais organizados, tanto militarmente como civilmente e possuem uma variedade de tons de verde maior que de outras cores.",
+                "Os orcs normalmente são tratados como seres violentos, bestiais, e quase sempre como vilões, porém os meio-orcs(filhos de orcs com humanos ou elfos) são tratado como renegados, tal como os meios-elfos, por agirem como heróis, algumas vezes, e por não serem 'puros'.",
+                "Fúria de orc - ganha +1 de dano a cada 50% de vida perdida.",
+                "Berserker – quando chegar a 0 de pv ganha +2 de dano e +3 de deslocamento porém bate em quem estiver mais próximo incluindo aliados durante 3 turnos.",
+                "Orcs são criaturas que não temem quase inimigo nenhum, portanto ganha +2 em testes contra intimidação.",
+                "Falam linguagem orc e comum."
+            ]
+        },
+        {
+            "name": "ANÃO",
+            "modificadores": [
+                {
+                    "forca": 2,
+                    "destreza": -1,
+                    "constituicao": 2,
+                    "carisma": -1,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Anões são seres clássicos de RPG de estatura baixa vindos da mitologia nórdica, em que segundo as lendas, eles são mestres na arte da mineração e nas forjas. Nas histórias de Tolkien eles são descritos como seres barbudos e baixos. Em geral são bons em luta com machados e martelos nos RPGs.",
+                "Caverneiro – enquanto estiver em cavernas ou montanhas ganha 20% de pv.",
+                "O poder tá todo na barba - ganha +6 de pv por nível.",
+                "Forma de pedra(passiva) – Todo anão tem sua pele e órgãos mais rígidos, não tomando veneno, e é mais difícil de sangrar(dificuldade 14 para sangrar), ganha também +1 de armadura natural (resistência mágica + armadura) a cada 5 níveis.",
+                "Se é você que vai pagar eu to dentro - Toda vez que um anão for disputar num concurso de bebidas ele consegue beber o dobro do normal com a mesma dificuldade(ex: o inimigo teve 10 de dificuldade para beber 1 copo, com a mesma 10 de dificuldade o anão bebe 2 copos)",
+                "Anões têm facilidade em encontrar metais preciosos e outros materiais de forja.",
+                "Anões podem enxergar em ambientes com muito pouca luminosidade, porém não no escuro total, anões também tem +2 em testes de forjas de equipamentos e começa com perícia em forja 2 e beber 2.",
+                "A raça dos anões é bem peculiar, com um gosto intenso por hidromel e outras bebidas da caverna esse baixinho consegue deixar até grandes heróis em apuros quando se fala em desafio de força ou bebida.",
+                "A raça anões não se dão muito bem com a raça élfica sendo assim grandes rixas começam até por pequenas coisas entre essas raças.",
+                "Porém quando se fala em taberna/taverna temos que lembrar dos anões não é mesmo? Ele é provavelmente o taverneiro mais padrão de todos os rpgs.",
+                "Dotado de uma personalidade bem particular os mesmos trazem consigo grandes histórias e revelações sobre o mundo.",
+                "Falam linguagem anão e comum."
+            ]
+        },
+        {
+            "name": "HALFLING",
+            "modificadores": [
+                {
+                    "forca": -1,
+                    "destreza": 2,
+                    "constituicao": 0,
+                    "carisma": 1,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "sorte": 1,
+            "descricao": [
+                "Malandrinho – ganha +1 de CA a cada 3 níveis.",
+                "Sorte - ganha +1 de sorte em situações circunstanciais",
+                "Iniciativa – ganha +2 para começar a batalha",
+                "Os halflings são dotados de um carisma excelente esses baixinhos conseguem tirar gargalhadas até de pedras e qualquer taverna sem eles está incompleta.",
+                "Tem um boato que são todos ladrões, mas é mentira, nunca acredite neles, na verdade é bem menos, são só quase todos.",
+                "Com menos de 90 cm de altura, esse baixinho gosta de arrumar confusões das grandes.",
+                "Falam linguagem comum."
+            ]
+        },
+        {
+            "name": "DRACONIANO",
+            "modificadores": [
+                {
+                    "forca": 1,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 1,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Cuspir elemento",
+                "Level 1 - 1d4 de dano em área (a cada 3 turnos) [4 sqm/1/2/3/4]",
+                "Level 3 - 1d6 de dano em área (a cada 3 turnos) [5 sqm]",
+                "Level 5 – 1d8 de dano em área (a cada 3 turnos) [6 sqm]",
+                "Level 7 – 1d10 de dano em área (a cada 3 turnos) [7 sqm]",
+                "Level 10 – 1d12 de dano em área (a cada 3 turnos) [8 sqm]",
+                "Escama de dragão: +1 de armadura e +2 de resistência elemental (passiva)",
+                "Falam linguagem dracônica e comum."
+            ]
+        },
+        {
+            "name": "FADA",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 2
+                }
+            ],
+            "descricao": [
+                "Voo: transforma-se num ser pequeno de asas que brilha muito e solta um pólen com poder calmante durante 1 rodada. Acalma no caso de fúria/berseker e afins, porém não funciona contra transformações tipo lobisomem (usado 1 vez por dia).",
+                "Pólen curativo: a fada pode tocar um aliado concedendo 1d4 de vida, caso o alvo seja usuário de mana a encherá totalmente, caso não seja, resetará todas as recargas ativas (5 turnos de recarga).",
+                "Manipulação energética: a fada emite uma luz que os inimigos que olharem ficarão paralisados por 1 turno. Para entender sobre a habilidade é necessário que o oponente tenha misticismo pelo menos 2. Tem que ser usada como ação. (4 turnos de recarga)",
+                "Falam linguagem comum e linguagem das fadas."
+            ]
+        },
+        {
+            "name": "MEIO DEMÔNIO",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 1,
+                    "extra": 1
+                }
+            ],
+            "descricao": [
+                "Meio demônio é um ser que tem um lado humano e um lado demônio, porém não é um demônio, é um humano com sangue demoníaco. Por isso não tem fraquezas e nem resistências.",
+                "Medo: faz o inimigo do mesmo nível ou mais baixo sair correndo (dificuldade d20 + carisma) contra força de vontade do oponente usado 1 vez por combate [se o inimigo for level mais alto, ganha +5 no teste por cada level]",
+                "Benção da morte: todos os aliados ganham +1 (a cada 3 níveis) de dano, +1 de ac e de ca(a cada 3 níveis) (gasta movimento para usar), dura 2 turnos (tem 5 turnos de recarga).",
+                "A eternidade está ao meu lado: Caso um meio demônio morra, o mesmo voltará com o mesmo nível porém xp excedente zerada (ex: se estiver level 3 com 2000 de xp volta ao level 3 com 1500 de xp). Se o seu corpo anterior estiver disponível ele voltará para o mesmo corpo, se não ele voltará para outro corpo. Ele demora (10 - nível) turnos para voltar a vida (mínimo 2 turnos).",
+                "Falam linguagem comum e daemon."
+            ]
+        },
+        {
+            "name": "MEIO ANJO",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 1,
+                    "extra": 1
+                }
+            ],
+            "descricao": [
+                "Meio anjo é um ser que tem um lado humano e um lado anjo, porém não é um anjo, é um humano com sangue angelical. Por isso não tem fraquezas e nem resistências.",
+                "Purificar: capacidade de purificar aliados ou a si mesmo de quase todos os tipos de efeitos adversos. (4 turnos de recarga)",
+                "Benção divina: concede a todos 3 + 1(a cada 2 níveis) de regeneração de vida por turno, +1(a cada 3 níveis) de armadura e de armadura mágic a(gasta movimento para usar), dura 2 turnos (tem 5 turnos de recarga).",
+                "Falam linguagem comum e enoquiana."
+            ]
+        },
+        {
+            "name": "GOLEM",
+            "modificadores": [
+                {
+                    "forca": 2,
+                    "destreza": -2,
+                    "constituicao": 3,
+                    "carisma": 0,
+                    "inteligencia": -1,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Resistência natural: tem +2 de resistência natural (aumenta 1 a cada 3 níveis) e ganha +2 de pv por nível, mas em compensação eles não conseguem encontrar armadura para utilizar.",
+                "Vem ni mim(Taunt): todos os inimigos em até 5 sqm de distância se sentem forçados a atacar o golem tendo que fazer um teste de dificuldade 12 + força de vontade do golem - força de vontade dos inimigos (quando atacado por inimigos no taunt o golem reduz em 50% o dano sofrido, o cálculo é: dano - resistências/armaduras e depois é feita a divisão por 2 para encontrar os 50% de dano que passaram) [usado a cada 3 turnos].",
+                "Golens podem se alimentar de pedras e não tomam dano provindo de veneno visto que não tem sangue, porém são facilmente manipuláveis, não podem aprender a nadar, a escalar, fazer acrobacias e nem nada do tipo.",
+                "Falam linguagem gigante e comum."
+            ]
+        },
+        {
+            "name": "REPTILIANO",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 1,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": 0,
+                    "sabedoria": 1,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "-> Persona: capacidade de copiar aparência de alguém e suas especificações (1 vez ao dia e dura 1 hora), d20 + sabedoria(do invocador) - sabedoria(do inimigo) para detectá-lo.",
+                "-> Animalia: Pode se transformar em animais que já tenha visto fisicamente, e ficar por até 2 turnos transformado (2 turnos de recarga). Seus atributos mudarão de acordo com o animal escolhido e caberá ao mestre te dizer na hora o atributo necessário…",
+                "Camuflagem: ao tocar algo, pode mudar a cor da pele e o aspecto de seu corpo, tornando-o mais difícil de ser encontrado.",
+                "Falam linguagem comum, porém com sotaque."
+            ]
+        },
+        {
+            "name": "VAMPIRO",
+            "modificadores": [
+                {
+                    "forca": -1,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 1,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 2
+                }
+            ],
+            "descricao": [
+                "Life drain: rouba até 1d4 de vida do oponente (aumenta em +1d4 a cada 3 níveis) (a cada 3 turnos sem teste) pode ser usado no lugar do movimento (até 3 sqm)",
+                "Ganha +2 de dano após matar um oponente a noite até o sol raiar (não acumulativo)",
+                "Vampiros conseguem enxergar perfeitamente no escuro, e sua audição é mais aguçada, ganhando assim +1 em testes de percepção e também consegue sentir inimigos que estejam sangrando ou sangue por perto.",
+                "Falam linguagem comum."
+            ]
+        },
+        {
+            "name": "LOBISOMEM",
+            "modificadores": [
+                {
+                    "forca": 1,
+                    "destreza": 1,
+                    "constituicao": 1,
+                    "carisma": -1,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "1 de regeneração de vida por round (aumentando em +1 a cada 4 níveis) (passivo).",
+                "Lua cheia: quando a mesma chegar o jogador perde o controle se transformando em uma fera sem sentimentos, ganha +6 de dano, +5 de acerto e sua regeneração aumenta em +2.",
+                "Nunca morto: se estiver com 0 pv o jogador pode escolher se transformar mesmo sem a lua cheia, podendo ir até -10 de pv ou 3 rounds.",
+                "Lobisomens podem comer os inimigos regenerando parte de sua vida (equivalente a poção de vida leve[até level 5], o equivalente a poção de vida média [do 5 ao 7] e o equivalente a poção grande [do 7 em diante]), também tem facilidade em sentir cheiros, principalmente de sangue.",
+                "A lua segue a seguinte ordem, nova -> crescente -> cheia -> minguante a cada 2 dias. O dia de início é calculado no d20 (de 1-5 (nova), 6-10 (crescente), 11-15 (cheia), 16-20 (minguante), porém para saber disso é necessário alguma perícia voltada para entendimento da lua.",
+                "Falam linguagem comum."
+            ]
+        },
+        {
+            "name": "ULVERARVINGER",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 0,
+                    "constituicao": 1,
+                    "carisma": 2,
+                    "inteligencia": -1,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Faro aguçado: qualquer criatura que esteja a até 10 sqm do ulvearvinger é automaticamente detectada pelo seu faro.",
+                "Mordida: essa criatura pode dar uma mordida no lugar do movimento dando 1d6 de dano (a cada 4 níveis).",
+                "Falam linguagem comum e canina."
+            ]
+        },
+        {
+            "name": "KHAJIIT",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": 2,
+                    "constituicao": 0,
+                    "carisma": 0,
+                    "inteligencia": -1,
+                    "sabedoria": 1,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Seus instintos são sempre aprimorados, por tanto em qualquer teste de percepção que envolva os sentidos ele ganha +2 nos testes",
+                "Khajiit também consegue enxergar no escuro, podendo assim lutar a noite sem problemas",
+                "Khajiit não necessariamente precisam de armas, podendo atacar usando suas garras (que aumentam de acordo com a tabela do dano das armas)",
+                "Khajiit costumam ter sotaque, como se fosse realmente um gato humanóide",
+                "Falam linguagem comum com sotaque e felina."
+            ]
+        },
+        {
+            "name": "GORILA",
+            "modificadores": [
+                {
+                    "forca": 1,
+                    "destreza": 1,
+                    "constituicao": 0,
+                    "carisma": -1,
+                    "inteligencia": -1,
+                    "sabedoria": 1,
+                    "extra": 1
+                }
+            ],
+            "descricao": [
+                "Gorila: habilidade atordoamento - pulando de lugar alto consegue atordoar todos em uma área de 2 sqm e da 1d6 de dano se cair em cima de alguém. dificuldade 15 + força de vontade para resistir. Recarga de 2 turnos.",
+                "Primata: não precisam fazer testes para subir em locais mais altos e nem para se movimentar entre árvores.",
+                "Primata: podem se alimentar de plantas, alguns tipos de árvores e comidas normais.",
+                "Linguagem: primata e comum."
+            ]
+        },
+        {
+            "name": "MACACO",
+            "modificadores": [
+                {
+                    "forca": 1,
+                    "destreza": 1,
+                    "constituicao": 0,
+                    "carisma": -1,
+                    "inteligencia": -1,
+                    "sabedoria": 1,
+                    "extra": 1
+                }
+            ],
+            "descricao": [
+                "Macaco: lutando em cima de locais ganha bônus de +1 de deslocamento, +1 ac e +1 ca.",
+                "Primata: não precisam fazer testes para subir em locais mais altos e nem para se movimentar entre árvores.",
+                "Primata: podem se alimentar de plantas, alguns tipos de árvores e comidas normais.",
+                "Linguagem: primata e comum."
+            ]
+        },
+        {
+            "name": "ASURA",
+            "modificadores": [
+                {
+                    "forca": -1,
+                    "destreza": 0,
+                    "constituicao": -1,
+                    "carisma": 1,
+                    "inteligencia": 3,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Asuras são pequenos seres dotados de inteligência que misturam engenharia, magia e criatividade para se aventurar pelo mundo.",
+                "Inteligentes: Asuras começam com perícia em: engenharia +2 e armadilhas +3",
+                "Companheiro de engrenagem: Todo asura constrói seu próprio protótipo de aliado antes de se aventurar pelo mundo. Ele não se comunica com ninguém além de seu criador e tem 3 PV inicialmente, pode ser consertado pelo próprio asura, algum engenheiro ou Transmutadores. Ações:",
+                "Nível 1 - Reanimar um aliado que está desmaiado, fazendo-o voltar com 10% de seu PV máximo.",
+                "Nível 3 Armar e desarmar armadilhas + identificar magia.",
+                "Nível 5 - +7 PV e pode se consertar",
+                "Nível 7 - Quebra selamentos mágicos de nível inferior ao seu + criação e conserto de itens derivados de engenharia",
+                "Nível10 - Você pode criar um novo robô aliado que possui asas sintéticas, ele pode voar, curar até 20 de PV por dia e se comunica com você.",
+                "Linguagem: Comum e +1 a escolha do jogador"
+            ]
+        },
+        {
+            "name": "ENT",
+            "modificadores": [
+                {
+                    "forca": 0,
+                    "destreza": -1,
+                    "constituicao": 1,
+                    "carisma": 0,
+                    "inteligencia": -1,
+                    "sabedoria": 3,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Ents são seres antigos das florestas, seu corpo se assemelha ao de uma árvore, costumam ser calmos e amigáveis, mas não queira ver um Ent irritado. Costumam viver entre 200 e 1000 anos e chegam até a 3m de altura em alguns casos",
+                "Ents não precisam se alimentar, visto que podem fazer fotossíntese, mas caso queiram, uma folha já os alimentam.",
+                "Caso um Ent perca um membro do corpo, o mesmo se regenera em 2 semanas desde que o ent esteja vivo.",
+                "Ents não dormem todas as noites como uma pessoa normal, mas precisam hibernar as vezes (Não podem trabalhar entre uma sessão e outra, pois precisam estar hibernando).",
+                "Hábitat natural: Sempre que está em florestas ou bosques tem +2 Regen passiva para si.",
+                "Raízes de yggdrasil: O Ent e todo aliado que estiver até 4 Sqm do Ent ganha +1 de Regen passiva.",
+                "Linguagem: Gigante e comum."
+            ]
+        },
+        {
+            "name": "PREDADOR",
+            "modificadores": [
+                {
+                    "forca": 2,
+                    "destreza": 1,
+                    "constituicao": 0,
+                    "carisma": -1,
+                    "inteligencia": -1,
+                    "sabedoria": 1,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Anda o dobro de Sqm de baixo d'água",
+                "Ganha +3 Dano para todos ataques de baixo d'água",
+                "Já possuí perícia em nadar 5",
+                "Necessita comer o dobro de comida que um humano regular",
+                "Não necessita de teste para comer peixes debaixo d'água.",
+                "Mordida: Aplica uma mordida que causa 1D6 dano + Sangramento 5% vida atual do alvo, Stack máximo 5. (3 turnos CD)",
+                "Caçador nato: Os predadores enquanto estão na água conseguem sentir cheiro de sangue em até 400 Sqm e ganham +3 de deslocamento para alcançar um alvo em sangramento.",
+                "Respiram debaixo da água e falam com os peixes",
+                "Linguagem: Marinha e Comum"
+            ]
+        },
+        {
+            "name": "ANCIÃO",
+            "modificadores": [
+                {
+                    "forca": 1,
+                    "destreza": -1,
+                    "constituicao": 2,
+                    "carisma": -1,
+                    "inteligencia": -1,
+                    "sabedoria": 2,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Ganha +4 PV por nível (por nível) +1 de armadura(a cada 2 níveis)",
+                "Possui perícia nadar 3",
+                "Pode dormir dentro do próprio casco",
+                "Não pode usar armadura",
+                "Carrasco: Pode entrar completamente no seu casco, enquanto está no casco não recebe dano direto no PV, quem recebe dano é o Casco, que possui 40% do PV total do marinho. O casco se regenera  em 20% todo turno quando o marinho não está nele. Caso o marinho saia do casco só pode entrar nele novamente após o casco atingir 100% de PV. Caso o casco quebre ele se regenera em 1 dia.",
+                "Venha para perto de mim: Hooka um alvo em até 5 sqm com uma corda mágica invisível. Dificuldade: mira + mod força + d20 - (Esquiva do adv + 2).",
+                "Casco giratório: Sai girando no casco em uma linha reta de até 5 sqm (pode ser diagonal), caso encoste em alguém aplica 1d4 dano. (2 turnos de recarga).",
+                "Respiram debaixo da água e falam com os peixes",
+                "Linguagem: Marinha e Comum"
+            ]
+        },
+        {
+            "name": "SEREIA",
+            "modificadores": [
+                {
+                    "forca": -1,
+                    "destreza": 0,
+                    "constituicao": 0,
+                    "carisma": 3,
+                    "inteligencia": 0,
+                    "sabedoria": 0,
+                    "extra": 0
+                }
+            ],
+            "descricao": [
+                "Sereias/Tritões são seres calmos e muito bonitos, mas não deixe sua aparência te enganar!",
+                "PODER DA SEDUÇÃO: a sereia começa a cantar para encantar os oponentes que farão um teste de dificuldade (7 + carisma (sereia/tritão) - a própria força de vontade) , os que não passarem tomarão charme(que é uma espécie de stun) por 1 turno não podendo fazer nada, nem mesmo esquivar (pega numa área de 5 sqm para todos os lados da sereia)  (durante 1 turno) (5 turnos de recarga).",                
+                "BOLHA D’ÁGUA: cria uma bolha de água explosiva que causa 1d4 de dano em área e pega numa área 3 sqm, acertando a bolha em até 7 sqm. Pode ser usado como movimento.",
+                "MINHA ÁGUA MINHA VIDA (passiva): Quando dentro d’água a sereia dobra seu deslocamento e seu acerto.",
+                "PODER DO CANTO (passiva): Tanto a sereia quanto o tritão conseguem dar dano baseado em seu carisma, através da música ou com sua arma e seu acerto também pode ser baseado em carisma. (Olhar tabela de dano)",
+                "Sereias/Tritões conseguem falar com peixes e respirar debaixo d’água. Em terra firme, sereias/tritões são similares a humanos, sofrendo suas alterações corporais somente quando em contato com água.",
+                "Respiram debaixo da água e falam com os peixes",
+                "Linguagem: Marinha e Comum"
+            ]
+        },
+        {
+            "name": "MUTANT",
+            "modificadores": [
+                {
+                    "forca": 2,
+                    "destreza": 2,
+                    "constituicao": 1,
+                    "carisma": -1,
+                    "inteligencia": -1,
+                    "sabedoria": -1,
+                    "extra": 0
+                }
+            ],
+            "modVida": 8,
+            "descricao": [ 
+                {
+                    "introducao": [
+                        "É um humano que teve seu corpo invadido por um ser extraterrestre, e que através de manipulações de seu corpo consegue atacar os inimigos. Parecido com o Venom. Não possui classe, porém o resto de seu kit é normal e não pode ter a virtude invocação.",
+                        "As imagens das fotos são somente ideias, segue a criatividade do usuário fazer a arma que bem entender."
+                    ],
+                    "armas": [
+                        "Obs: a troca de armas é vista como magia, então silence impede e faz a arma que estiver ativa ser recolhida e o mutante voltar a forma normal. Ele pode trocar de arma tantas vezes quantas tiver ação (ex: 3 ações, 3 trocas)",
+                        "Pesada: 50% de chance de paralisar e da o dano normal da arma.",
+                        "Corte: da o dano normal + 50% do dano.",
+                        "Defesa: se entrar em modo de defesa consegue diminuir qualquer dano em si mesmo em 50%.",
+                        "Arremesso: lança um espinho que tira de seu próprio corpo (gasta 1d6 de vida e essa mesma vida dará dano extra) dano normal + extra."
+
+                    ],
+                    "corpomutante": [
+                        "Regen de 1 por turno (aumenta +1 a cada 3 níveis)",
+                        "+1 de dano (por nível)",
+                        "+1 de armadura (a cada 2 níveis)"
+                    ],
+                    "habilidades": [
+                        "(Nível 1): Devorar: todo corpo recém morto (menos de 1h) pode ser devorado pelo Mutant garantindo-lhe uma regeneração de 25% da vida total do alvo quando ele era vivo.",
+                        "(Nível 2): Lançar teia: o Mutante tem a capacidade de lançar teias orgânicas escuras, podendo utilizar para puxar coisas, se puxar ou até mesmo tentar prender algo ou alguém. Caso queira se levantar não é necessário fazer teste, para puxar algo fará uma disputa de igual pra igual com o oponente que está tentando forçar sendo força + d20 vs força + d20. (3 turnos de recarga)",
+                        "(Nível 3): Fator cura acelerada: toda vez que o mutante chega a 50% de vida sua cura fica 4x mais forte.",
+                        "(Nível 4): Proteção simbionte: Sempre que uma magia for lançada e passar em até 5 sqm do mutante ele tem 50% de chance de conseguir por reflexo absorver a magia com o seu corpo. Caso consiga, perde o próximo turno, porém se não conseguir o turno continua normal. (pode optar por não usar)",
+                        "(Nível 5): Sempre vivo: Um mutante passa a ser um ser de certa forma imortal, caso o mesmo seja eliminado seus restos são absorvidos pela terra e você voltará a vida após 1 dia perdendo toda a xp do level atual porém sem descer de level. Se sua xp estiver zerada volta 1 level"
+                        
+                    ]
+                }
+            ]
+        }
+    ]
+}

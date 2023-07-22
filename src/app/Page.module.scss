@@ -1,0 +1,23 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardsHome {
+  background: #252525;
+  padding: 40px 0 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+  .CardsHome {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Home {
+    margin-top: 60px;
+  }
+}

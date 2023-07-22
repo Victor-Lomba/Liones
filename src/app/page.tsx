@@ -1,95 +1,39 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.scss";
+import Banner from "@/components/Banner/Banner";
+import CardHome from "@/components/CardHome/CardHome";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <>
+      <section className={styles.Home}>
+        <Banner
+          img="bannerHome.png"
+          imgMobile="bannerHomeMobile.png"
+          title="Bem-vindos a "
+          titleBold="Cidade de Liones"
+          text="Bem-vindo ao mundo mágico de Liones! Aqui, você encontrará uma cidade cheia de vida e diversidade, onde elfos, anões, humanos e muitas outras espécies convivem em harmonia."
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+        <div className={styles.CardsHome}>
+          <CardHome
+            img="home-atualizacoes.jpg"
+            title="Atualizações"
+            text="Clicando nesse card você poderá saber todas as novidades que estão sendo implementadas no sistema."
+            url="/sistema/atualizacoes"
+          />
+          <CardHome
+            img="home-livro-do-jogador.jpg"
+            title="Livro do Jogador"
+            text="O livro que contém todas as informações sobre o sistema. Não esqueça de ler o livro do jogador antes de começar a jogar."
+            url="/sistema/livro-do-jogador"
+          />
+          <CardHome
+            img="home-racas-e-classes.jpg"
+            title="Raças e Classes"
+            text="Aqui você terá a descrição de todas as raças e classes que estão disponíveis no sistema e como elas funcionam."
+            url="/personagem/racas-e-classes"
+          />
+        </div>
+      </section>
+    </>
+  );
 }

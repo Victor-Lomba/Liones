@@ -1,0 +1,118 @@
+{
+    "listaMontarias": [
+        "bisaoVoador",
+        "caoUrsoPolar",
+        "sapoMyoboku",
+        "pecoPeco",
+        "grifo",
+        "rinoceronteDeGuerra",
+        "kistune",
+        "escorpiaoGigante",
+        "salamandraMutante",
+        "capivalo"
+    ],
+
+    "montarias": [
+        {
+            "nome": "Bisão Voador",
+            "descricao": [
+                "Herbívoro voador com chifres e extremamente pacífico.",
+                "Esse bisão lendário é originário das terras antigas de Kyoto.",
+                "Possui capacidade de voar bem rápido mas no solo é lento."
+            ],
+            "capacidadePessoas": 10,
+            "deslocamentoTurno": 5
+        },
+        {
+            "nome": "Cão Urso Polar",
+            "descricao": [
+                "Um mesclado de urso polar e cachorro gigante do Norte, essa montaria é típica das terras gélidas de Yothun e ele suporta tranquilamente qualquer temperatura abaixo de 0.",
+                "Possui a habilidade de rastrear e perceber presença imediatamente até 15 Sqm pelo seu olfato. Muito obediente e forte."
+            ],
+            "capacidadePessoas": 4,
+            "deslocamentoTurno": 20
+        },
+        {
+            "nome": "Sapo Myoboku",
+            "descricao": [
+                "Esse sapo sábio especial, originário dos Montes Myoboku é uma montaria que pode estar sempre com seu dono devido a sua habilidade de mudar de tamanho, podendo ficar pequeno como a palma de uma mão, ou ficar do tamanho de um elefante.",
+                "Ele também possui a habilidade de se comunicar com seu próprio dono através de uma meditação em conjunto."
+            ],
+            "capacidadePessoas": [1, 4],
+            "deslocamentoTurno": [6, 18]
+        },
+        {
+            "nome": "Peco Peco",
+            "descricao": [
+                "Ave engraçada e divertida.",
+                "A montaria mais esperta de todas, originária de Liones,  o peco peco é um ser inteligente e pode conversar com você e te ajudar.",
+                "Podem planar, mas não voam.",
+                "Tem alto carisma e podem te ajudar com isso. (Faz teste de carisma como outros players contando com 7 de modificador)"
+            ],
+            "capacidadePessoas": 2,
+            "deslocamentoTurno": 18
+        },
+        {
+            "nome": "Grifo",
+            "descricao": [
+                "Metade leão e metade águia, este animal que é um símbolo de honra para Katolis, é uma criatura extremamente leal ao seu dono.",
+                "Pode ser agressivo para defendê-lo.",
+                "Possui a habilidade de voar."
+            ],
+            "capacidadePessoas": 2,
+            "deslocamentoTurno": 12
+        },
+        {
+            "nome": "Rinoceronte De Guerra",
+            "descricao": [
+                "O mais resistente e mais lento das montarias, nascido nas florestas míticas de Duren, o rinoceronte é apático ao seu dono, mas pode servir de proteção, já que sua pele é extremamente difícil de ser perfurada.",
+                "É a única montaria que pode ser tranquilamente usada em combate."
+            ],
+            "capacidadePessoas": 4,
+            "deslocamentoTurno": 8
+        },
+        {
+            "nome": "Kitsune",
+            "descricao": [
+                "A linda raposa de 5 caudas, tem o tamanho de um leão e chama atenção pela sua beleza.",
+                "Esse animal oriundo de Kyoto, possui a habilidade de sempre saber o caminho certo e sempre leva seu dono aonde ele quer ir exatamente e tem 3x a velocidade de um cavalo."
+            ],
+            "capacidadePessoas": 4,
+            "deslocamentoTurno": 45
+        },
+        {
+            "nome": "Escorpião Gigante",
+            "descricao": [
+                "Direto do deserto de Pharos, essa montaria é extremamente arisca e a única pessoa que ele garantidamente não atacará é o seu dono.",
+                "Possui a habilidade de andar pelas paredes e outras superfícies + entrar debaixo da terra.",
+                "Ferrão com veneno (5% PV atual)."
+            ],
+            "capacidadePessoas": 1,
+            "deslocamentoTurno": 20
+        },
+        {
+            "nome": "Salamandra Mutante",
+            "descricao": [
+                "Vistos pela primeira vez no território das ilhas de Maré,  esses bichinhos podem ser seu melhor aliado.",
+                "Possui habilidade de se camuflar em qualquer ambiente a qualquer momento e nadam até 2x mais rápido que um barco comum.",
+                "Podem andar tanto bípedes quanto Quadrúpedes."
+            ],
+            "capacidadePessoas": 1,
+            "deslocamentoTurno": 17
+        },
+        {
+            "nome": "Capivalo",
+            "descricao": [
+                "Uma capivara no tamanho de cavalo.",
+                "Tem todas as funções comuns do cavalo.",
+                "Extremamente pacífico e herbívoro.",
+                "Gente fina e sangue bom, esse camarada veio dos pastos de Farm Ville.",
+                "Existe uma mítica de que o portador do capivalo é cercado por uma sorte Mítica, como se o mundo conspirasse para que tudo desse certo pra ele.",
+                "Entrega 2 de Regen de PV por turno ao seu portador.",
+                "Ele nunca é atacado."
+            ],
+            "capacidadePessoas": 2,
+            "deslocamentoTurno": 12
+        }
+    ]
+}

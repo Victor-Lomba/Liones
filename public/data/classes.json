@@ -1,0 +1,549 @@
+{
+    "classList": [
+        "GUERREIRO",
+        "CAÇADOR",
+        "LADINO",
+        "MAGO",
+        "SACERDOTE / SHAMAN",
+        "MONGE",
+        "BÁRBARO",
+        "DRUIDA",
+        "PIRATA",
+        "SAMURAI",
+        "NINJA",
+        "NECROMANTE",
+        "DOBRADOR DE FOGO",
+        "DOBRADOR DE TERRA",
+        "DOBRADOR DE ÁGUA",
+        "DOBRADOR DE AR",
+        "BRUXO",
+        "PALADINO",
+        "BARDO",
+        "ILUSIONISTA",
+        "TRANSMUTADOR",
+        "ALQUIMISTA",
+        "RAIZEN",
+        "MESTRE DAS ARTES MÍSTICAS",
+        "TAEKWON"
+    ],
+    "class": [
+        {   
+            "name": "GUERREIRO",
+            "modVida": 8,
+            "habilities": [
+                "Guerreiros têm naturalmente +3 Iniciativa +1 AC e +1 CA.",
+                "Aparo: O Guerreiro tem 1 aparo livre por turno. Caso esteja sozinho e em desvantagem ele tem +1 extra.",
+                "Golpe certeiro: Ganha +4 AC ao usar e causa +3 de dano fixo (1d4 Turno de Recarga)",
+                "(Nível 2) Corte giratório: O guerreiro pode entrar no meio de vários inimigos e girar sua arma dando: Dano +1 (a cada 3 níveis) em uma área circular em até 2 sqm de distância. (2 Turnos de Recarga).",
+                "(Nível 3) Ombrada: Tenta atingir o inimigo causando 1d10 + 1 dano, dando stun de 1 turno no oponente caso acerte e ele não passe no teste, dificuldade 11 + sabedoria - força de vontade (3 Turnos de Recarga).",
+                "(Nível 4) Inspiração de combatente: Se enche de inspiração e ganha por dois turnos: 2 CA + 2 AC + 2 DESLOCAMENTO. (2 Turnos de Recarga, a partir do término da skill).",
+                "(Nível 5) Rasgo de vida: Esta habilidade da 1d8 de dano extra + dano da arma e 100% do dano aplicado ao inimigo é recuperada para o guerreiro. (4 turnos de recarga)",
+                "(Nível 5) Cavaleiro em combate (PASSIVA):  Cada vez que um oponente é morto por ele, o guerreiro recupera 20% do seu pv total.",
+                "(Nível 6) Impacto profundo: Bate com toda a força a fim de incapacitar um membro do oponente, se acertar o membro é incapacitado por 1d4 turnos. Porém ele gasta tanta força nessa pancada que o próximo ataque terá penalidade de -1 de dano. (5 Turnos CD)",
+                "Perna: 1d4 turnos - 50% Desloc e - 2 CA",
+                "Braço: 1d4 Turnos sem usar aquele braço."
+            ]
+        },
+        {   
+            "name": "CAÇADOR",
+            "modVida": 6,
+            "habilities": [
+                "Caçadores costumam sempre andar se esgueirando, chamando pouca atenção para si. Uma namee capaz de aplicar um enorme dano a distância em basicamente todo tipo de inimigo, fazendo com que o caçador seja uma namee muito diferenciada e extremamente perigosa de se enfrentar. Camuflagem (passiva): é mais difícil detectar um caçador, visto que o mesmo é muito bom em se esgueirar/se esconder, necessita de ambiente favorável e ganha +2 nesses testes.",
+                "Fabricar Flechas Básicas: usada 1 vezes por dia, fabrica 5 flechas básicas x nível.",
+                "(Nível 3) Fabricar flechas venenosas: usada 1x por dia, fabrica 3 flechas venenosas x nível (veneno da +1d4 de dano em 1d4 turno) (o dano do veneno vai aumentando 1d4 a cada 3 níveis, ex: nível 6 serão 2d4 de dano). ",
+                "(Nível 5) Fabricar flechas explosivas: usada 1x por dia, fabrica 2 flechas explosivas x nível (explosão causa 1d6 de dano em um espaço de 3 sqm) (o dano explosivo vai aumentando 1d6 a cada 5 níveis, ex: nível 10 serão 2d6 de dano.",
+                "(Nível 7) Fabricar flechas penetrantes: usada 1x por dia, fabrica 1 flecha penetrante x nível (flecha penetrante aplica o mesmo dano porém ignora armadura)",
+                "(Nível 10) Fabricar flechas infernais: usada 1x a cada 3 dias, produz 1 flecha infernal (flecha infernal ignora toda e qualquer defesa do oponente, e ainda o deixa queimando causando 1d12 durante 1d6 turnos).",
+                "Vamos a caça(passiva): Todo caçador ganha +3 de penetração de armadura a cada 2 níveis.",
+                "Tiro/golpe duplo: Efetua 2 ataques no lugar de 1 sendo que se acertar o primeiro, ganha +2AC para o segundo e +1 de dano (usado a cada 3 turnos).",
+                "Cegueira: Coloca sobre uma flecha um tipo de feitiço, que faz com que a flecha ao atingir o oponente explode milésimos antes em poeira negra, deixando o oponente com penalidade de -4AC por 2 turnos (usado a cada 5 turnos).",
+                "(Nível 2) Caçador voraz: Quando um inimigo está com menos de 25% de pv o caçador recebe +4 em testes de corrida para alcançar o inimigo e +2 de dano para finalizá-lo.",
+                "(Nível 2) Cortina de fumaça: após dar um ataque o caçador tem uma chance de se camuflar no ambiente, devido a sua classe sua camuflagem é tão habilidosa que funciona como se fosse uma invisibilidade. O valor base será 12, ou seja, quando o dado de acerto (sem acréscimos) de 12 ou mais ele irá se camuflar no ambiente, (caso esteja a noite a dificuldade será diminuída em 2 e de dia aumentada em 2) (em lugares abertos a dificuldade aumenta 3 mas em lugares mais fechados a dificuldade diminui 3). Para detectar o caçador será necessário passar num teste de dificuldade 12 + destreza do caçador - sabedoria de quem está procurando o caçador",
+                "(Nível 3) Tiro concentrado: o caçador se concentra durante 1 turno (sacrificando movimento e dano do turno) para dar o triplo do dano com +3 AC.",
+                "(Nível 4) Rajada de flechas: Atira 3 flechas podendo escolher atirar todas em 1 só ou 1 em cada oponente. (usado a cada 3 turnos)",
+                "(Nível 5) Plantar armadilhas: Coloca uma armadilha no solo que incapacita o oponente caso pise."
+            ]
+        },
+        {   
+            "name": "LADINO",
+            "modVida": 6,
+            "habilities": [
+                "Ladinos são personagens extremamente astutos, normalmente equipados com adagas, ladinos também usam ferramentas que os possibilitam muitas vezes atacar alvos específicos ou passar em lugares sem serem percebidos, outra vantagem do ladino é que são excelentes em roubos e afins. Ganham +4 perícias para ajudar nos seus feitos e perícia em roubar 2",
+                "Manto da agilidade: Ladinos são extremamente sagazes em fazerem o que fazem de forma rápida e certeira, portanto o ladino ganha +2CA +1 AC (passiva)",
+                "Backstab: Se atacar pelas costas, crita com 19 e causa o dobro de dano (Caso acerte crítico, o dano é x4). Para contar como backstab o inimigo não pode ter te visto, logo para te ver ele terá que fazer um teste de dificuldade 11 + (nível do ladino/2) - percepção. Caso o inimigo não esteja sob efeito de stun/taunt… ele irá olhar para o ladino após o primeiro ataque.",
+                "Manto do Encantamento: Um ladino antes de qualquer coisa ele é um personagem projetado para brincar com a sorte. A cada ataque o ladino irá ganhar uma espécie de buff de dano aleatório, que não será repetido. Os benefícios são cumulativos (desde que não seja o mesmo benefício) no oponente, porém caso o oponente fique 2 turnos sem receber dano do ladino os efeitos passam. E de acordo com o d10 terá os seguintes adicional:",
+                "1 - Veneno (valor no final)",
+                "2 - Sangramento no valor de 5% da vida atual do alvo",
+                "3 - Silence por 1 turno",
+                "4 - Diminui deslocamento do alvo na metade por 2 turnos",
+                "5 - Stun de 1 turno",
+                "6 - Regeneração de 20% do dano causado",
+                "7 - Diminui cura recebida pelo inimigo pela metade durante 1 turno",
+                "8 - Diminui o acerto do inimigo em 4 durante 2 turnos.",
+                "9 - Diminui a esquiva em 4 durante 2 turnos",
+                "10 - +3 de dano",
+                "11 - Diminui dano do inimigo em 2 por 1 turno",
+                "12 - Tira 1 ação do inimigo no próximo turno",
+                "Dano:",
+                "Nível 1 – 1d4 adicional",
+                "Nível 5 – 1d6 adicional",
+                "Nível 7 – 1d8 adicional",
+                "Nível 10 – 1d10 adicional",
+                "(Nível 2) Roubando o sistema: Um ladino ganha 50% a mais de dinheiro em cima da xp que qualquer outro player, ou seja, a cada 1 de xp ganha 1.5 de bronze.",
+                "(Nível 3) Passos leves: O ladino sabe como se movimentar sem ser percebido em combate, portanto para percebê-lo chegando você terá dificuldade 16(+2 a cada 3 níveis) no d20.",
+                "(Nível 3) O ladino pode se especializar em ladrão, assassino ou trapaceiro:",
+                " - Caso se especialize em assassinatos, o mesmo ganhará perícia para fabricar venenos tanto para imbuir as armas quanto para serem ingeridos pela vítima e usados nas armas.",
+                " - Caso se especialize em roubo o mesmo ganha +3 em testes de roubo e ganha a habilidade de poder usar itens que não são de sua classe.",
+                " - Caso se especialize em trapaças você ganhará alguns truques de mágica para enganar suas vítimas.",
+                "(Nível 4) Escapismo é minha praia: Caso seja lançada uma magia em área no local onde o ladino se encontra ele pode sacrificar seu próximo turno ou ação para escapar da área de impacto, lembrando que se ele tiver aceleração só perderá uma ação caso escolha ação. (5 turnos de recarga)",
+                "(Nível 5) Gambit’s card: escolhe uma dentre 3 cartas que será arremessada no próximo ataque contra o inimigo, sendo elas (2 turnos de recarga):",
+                " -> Carta amarela: dá o dano normal de ataque a distância e 1 turno de stun. Para resistir tem que passar num teste de dificuldade 11 + int do ladino - força de vontade.",
+                " -> Carta verde: dá o dano normal de ataque a distância em uma área de 5 sqm dando dano normal no alvo principal e 25% nos alvos em volta, e diminui 2 de deslocamento durante 2 turnos.",
+                " -> Carta vermelha: dá o dano normal de ataque a distância regenera 50% do dano que causar"
+            ]
+        },
+        {   
+            "name": "MAGO",
+            "modVida": 4,
+            "habilities": [
+                "Olho de mago: Todo mago pode quando estiver fora de combate invocar um olho através de uma estrutura para poder enxergar o que tem do outro lado.",
+                "(INATO) O mago pode ao iniciar seu turno escolher um elemento e todas as suas magias se transformam nesse elemento (também altera o elemento que o mesmo é afetado pela arte da magia), caso não seja mago como classe principal o mesmo só pode escolher 1 elemento e não poderá trocá-lo.",
+                "Míssil mágico: Invoca uma habilidade sem elemento que causa 1d4 de dano + modificador de int. (6 DE MANA)",
+                "Bola Elemental: Invoca uma bola elemental com sua magia que causa 1d6 de dano + modificador de int acerta em 5 sqm (1 no meio e todos os lados em volta) (12 DE MANA)",
+                "Explosão Elemental(área): Causa 2d6 de dano + modificador de inteligência numa área de até 13 sqm (1 no meio, 2 para cada lado e inclinado), deixa todos na área afetada stunados por 1 turno (canalização de 1 turno e pode ser cancelada com controle de grupo). Os inimigos deverão passar num teste de dificuldade 10 + int do mago - sabedoria do alvo. (20 DE MANA)",
+                "(Nível 2) Hydras Imortais: Invoca uma mini hydra imortal e imóvel durante 3 turnos qu.e atinge até 7 sqm causando 1d10 de dano + inteligência por turno, caso ainda tenha mana o mago pode invocar mais. (28 DE MANA)",
+                "(Nível 3) Esfera elemental (área): Invoca uma esfera (do elemento do mago) e escolhe onde ela fica posicionada, que fica a 4 metros de altura, dispara rajadas elementais(x) 1d4 (ganhando +1d4 a cada 3 mod de inteligência começa a contar da inteligência 0) em até x oponentes aleatórios (se tiver só 1 ele toma os 3d4) dentro de uma área de 4x4 Sqm. A esfera não pode ser destruída e dura 3 turnos ativa. (32 DE MANA)",
+                "(Nível 4) Imolar: solta uma rajada elemental contínua em alvo único em até 4 sqm de distância durante 3 rodadas e durante esse tempo o mago fica incapacitado de fazer outras ações. O dano por turno desta magia é de 2d10 + 2x int. O Dano é rolado todo turno. Se o alvo for para longe demais (acima de 9 sqm), a habilidade é cancelada. Não pode trocar de alvo. (80% MANA TOTAL)",
+                "(Nível 5) Orbes mortais: Ao atingir esse nível o mago recebe passivamente 1 orbe a cada 2 níveis que ele tem e que estes orbes flutuam em volta do mesmo, cada orbe aumenta o dano do mago em +1 (arredondando sempre para mais).",
+                "(Nível 6) Tempestade elemental(área): da 2d10 + inteligência de dano em área, e tem chance de 25% de paralisar cada oponente acertado. 5x5 SQM. (50 DE MANA)",
+                "(Nível 7) Caixão elemental: Prende seu oponente num caixão mortal elemental o segurando por 2 turnos ou escolhendo estourá-lo para dar 4d8 + int de dano, enquanto segurando o oponente no caixão o mago não pode conjurar nenhuma magia. (100% DA MANA E O MAGO FICA EXAUSTO POR 1 TURNO NÃO PODENDO CONJURAR MAGIAS NESSE TEMPO)",
+                "(Nível 8) Meteorito:",
+                "(Nível 9) Meteoro:",
+                "(Nível 10) Ira de Thor: ",
+                "O mago consegue identificar se existe magia sobre um artefato ou algum lugar, por exemplo. Os magos podem também quebrar selos de lugares. Necessitam a arte da magia."
+            ]
+        },
+        {   
+            "name": "SACERDOTE / SHAMAN",
+            "modVida": 6,
+            "habilities": [
+                "Escudo sagrado/mortal: Cria um escudo em volta de um aliado ou si mesmo, dando +3Def e +3Def Mágica (dura 2 turnos) (3 turnos contados a partir da finalização da habilidade)",
+                "Rapidez: Faz com que um aliado/si mesmo possa andar o dobro de sqm dando a ele +4CA (dura 2 turnos) (3 turnos contados a partir da finalização da habilidade)",
+                "Cura angelical/demoníaca: Cura uma pessoa em 1d8 + modificador de sabedoria com seus poderes (Recarga 3 rounds). Caso acerte criaturas das trevas, dará dano dobrado ao invés de curar.",
+                "Cura espiritual: Cura todos os membros da party em 1d6 + modificador de sabedoria (a cada 3 rounds). Obs: Não pode ser conjurado em inimigos.",
+                "(Nível 2) Solo movediço: faz o solo debaixo dos pés dos inimigos se transformarem numa espécie de areia movediça e os mesmos ficam com as pernas submersas na areia, tendo que passar num teste de dificuldade 10 + sabedoria do sacerdote - sabedoria para se soltarem. A magia dura 2 turnos caso a vítima não consiga sair. (Recarga de 4 turnos)",
+                "(Nível 3) Encantamento de luz/trevas: Encanta a arma de todos os aliados para que a mesma possa dar dano extra em criaturas das trevas/luz. O encantamento dura 24 horas. Dando dano +1, da +2 de AC e dobra o dano contra criaturas das trevas. (1x por dia)",
+                "(Nível 4) Mãos divinas/demoníacas: Deus ou o Diabo abençoam suas mãos para que você segure um inimigo por no máximo 3 turnos sem poder se mover, porém você também fica incapacitado de fazer movimentos enquanto durar a habilidade. A criatura fará teste de dificuldade 15 usando 1d20 + sabedoria da criatura - fé do invocador todos os turnos enquanto o efeito durar.",
+                "(Nível 5) Alma dourada/negra: O sacerdote clama a seu deus para abençoar um aliado que esteja morto para tentar trazê-lo de volta à vida, porém só funciona se o aliado morreu recentemente. Este feito será beneficiado de interpretação, poder da fé e fé do personagem, a dificuldade inicial é 18, porém caso o invocador da magia tenha alguma das coisas que foi dita anteriormente esta dificuldade será diminuída. (1x por semana)",
+                "(Nível 6) Envenenamento em massa: Invoca sobre seus inimigos (não pega em aliados, visto que é uma magia teleguiada) um mar de pragas que soltam partículas que causam dano de veneno ao inimigo num raio de 4 sqm dando dano de 1d6 todo turno até a criatura morrer ou tomar algum antídoto (1x por combate).",
+                "(Nível 7) Pacto divino/satânico: O sacerdote / shaman tenta usar de seus poderes para santificar/demonizar uma criatura, fazendo ela se desprender de seu corpo material, quanto mais longe da luz/trevas ela estiver maior é a dificuldade (Indo de 2 a 8 de dificuldade no d20). Caso a habilidade funcione (se a criatura/pessoa não passar no teste) o mesmo é libertado para os céus/inferno. (Usado a cada 3 turnos) ",
+                "(Nível 8) Cria uma redoma de poder divino/infernal que impede qualquer magia e habilidade de passar, tanto de aliados quanto de inimigos, normalmente usada para ganhar tempo, dura 1 turno a redoma porém a mesma é inquebrável. (1x por combate)",
+                "(Nível 9) O poder dos fiéis: O sacerdote / shaman sacrifica um dízimo de todo o dinheiro que possui para poder criar um escudo de proteção ao redor de si mesmo e de seus aliados dando +1 de armadura, +1 de resistência mágica, +1 de regeneração por turno, +1 de AC e +1 de CA. Dura 3 turnos. (1x por dia)",
+                "(Nível 10) Praga de gafanhotos: O céu é coberto por uma nuvem de gafanhotos divinos, que ataca todas as armaduras dos inimigos as roendo e destroçando, deixando assim os inimigos tendo que receber o dano de peito exposto. (1x por dia)",
+                "Sacerdotes geralmente usam da fé para serem como servos dos deuses na terra. (Independentemente de ter talento cura). Os Sacerdotes sentem repulsa de seres das trevas e inspiração por criaturas que lutam ao lado da luz. Caso optem por serem maus serão o completo oposto.",
+                "Caso algum membro do grupo seja de trevas sofrerá dano caso seja curado pelo sacerdote. Necessitam poder da fé ou cura independente da tendência."
+            ]
+        },
+        {   
+            "name": "MONGE",
+            "modVida": 8,
+            "habilities": [       
+                "Revidar: Gasta movimento para usar a técnica (dura 2 turnos, toda vez que atacado com a técnica ativa faz um teste de ataque caso tire um acerto maior que o oponente você contra-ataca) usado a cada 5 turnos.",
+                "Golpe de sorte: Se você efetuar uma esquiva seu próximo ataque ganha um acréscimo de dano de +2 stack máximo 3, caso não esquive perde todos os stacks.",
+                "(Nível 2) Golpe enérgico(passiva): Um monge é um especialista em bater nos pontos certos, fazendo com que 1 a cada 2 rodadas (ter aceleração não acelera essa rodada) seu ataque tire metade da energia total do oponente ou coloque 1 turno a mais em todas as habilidades do oponente.",
+                "(Nível 3) Evasão aprimorada: Um monge é um especialista em resolver as coisas numa boa e se esquivar de golpes, portanto ganha +2 de CA a cada 5 níveis.",
+                "(Nível 4) Rajada de golpes: o monge pode deferir 3 golpes seguidos sendo que todos após o primeiro tem penalidade de -2.",
+                "(Nível 5) Fúria interior: A cada golpe acertado, ganha +2 de AC para o próximo golpe (acumulativo até 4).",
+                "(Nível 7) Corpo de diamante: Um monge a partir desse nível se torna imune a venenos e a doenças.",
+                "(Nível 10) Punho supremo de Asura: Concentra toda sua energia para lançar uma habilidade que dá um hit no oponente e o aniquila, porém esta habilidade tem que acertar o oponente para funcionar e após isso o monge não consegue mais soltar habilidades pois fica exausto, contando somente com sua agilidade, força e inteligência para sobreviver o resto do combate. Necessário 3 turnos de carregamento para a habilidade funcionar (não adiantando aceleração para diminuir o tempo), o mesmo pode se mover enquanto carrega a habilidade.",
+                "Passiva (Parte 1): Monges podem se concentrar de forma que outras namees talvez não poderiam, dobrando a recuperação de pv por meditação. Caso medite fora de batalha é possível se recuperar de efeitos adversos.",
+                "Passiva (parte 2): O corpo de um monge é um templo, onde todo tipo de efeito adverso só terá 50% de chance de pegar nele (ex: veneno, sangramento, queimar, eletrificar...)"
+            ]
+        },
+        {   
+            "name": "BÁRBARO",
+            "modVida": 10,
+            "habilities": [
+                "O bárbaro, normalmente criado por pequenos povos e tribos, é um lutador nato e ama brigar. Seu estilo de vida somado a sua raiva inata lhe transforma em um combatente de peso. Um tipo de combatente que raramente vai se sentir intimidado por qualquer inimigo, pois ele sabe que o mais intimidador é o próprio bárbaro e todos sabem que é sempre difícil matar um bárbaro por serem guerreiros incansáveis.",
+                "Tenacidade: Caso o Bárbaro tome algum controle de grupo seguirá a seguinte regra:",
+                "Qualquer tipo de paralisia:",
+                "Efeito + de 1 turno: cai pela metade a quantidade de turnos.",
+                "Efeito de 1 turno: se tornará slow de metade de seu deslocamento (pelo mesmo tempo)",
+                "Qualquer tipo de slow:",
+                "Efeito + de 1 turno: cai pela metade a quantidade de turnos.",
+                "Efeito de 1 turno: Não afetará o Bárbaro.",
+                "Taunt: Obriga todos os inimigos em até 3 sqm a atacá-lo ganhando +2 de armadura ou caso a habilidade acerte mais de 2 inimigos reduz na metade o dano dos inimigos. (Dura 1 turno e tem 3 turnos para usar de novo). Para resistir a habilidade a vítima tem que passar num teste de dificuldade 11 + sabedoria - força de vontade do inimigo. O cálculo é feito da seguinte forma: dano - resistências/armaduras e depois é dividido por 2 para encontrar o dano real.",
+                "Ataque Desesperado: Sacrifica seu turno de ação e o próximo para dar 2 ataques no mesmo turno, causando um acréscimo de +2 de dano e ganhando +2 AC para o segundo ataque (1d4 turnos de recarga, contando a partir do uso da habilidade)",
+                "(Nível 2) Sempre em combate (passiva): Bárbaros são extremamente resistentes, por isso nos seus times eles normalmente são a linha de frente, portanto, o mesmo recebe +2 de pv por nível.",
+                "(Nível 3) Rachador: O bárbaro faz um salto e pode escolher onde cair até 4 SQM de onde ele está. A queda aplica 1d8 Dano ao alvo, os inimigos ao redor recebem 1d6 de dano e todos na área afetada ficam com defasagem de - 50% de deslocamento por 2 turnos. (4 turnos de recarga).",
+                "(Nível 4) Berserker (passiva/ativa): Quando chegam a 0 de pv você terá 50% de chance de entrar em estado de berserker (repetindo um teste todos os turnos enquanto estiver consciente) que é um estado de fúria intensa, quando seu sangue começa a entrar em ebulição, durante esse estado você irá permanecer ativo por no mínimo  mais 3 rodadas no combate independente do dano que receber, mas lembre-se que durante esse estado você perderá controle sobre seu personagem, largará a arma e dará o mesmo dano da arma usando as mãos devido ao seu frenesi, lembrando que esta regra não vale para armas mágicas. (4 turnos de recarga). Durante esse estado seu personagem irá receber +4 de dano (a cada 3 níveis) e -3 de CA.",
+                "(Nível 5) Todos contra um: Caso esteja lutando em desvantagem você ganhará bônus de redução de dano de 2. Lembrando: redução de dano reduzirá qualquer dano recebido.",
+                "Bárbaros não podem usar armadura porém sua musculatura superdesenvolvida lhes proporciona armadura de acordo com a tabela a seguir:"
+            ],
+            "table": {
+               "nivel": [1,2,3,4,5,6,7,8],
+               "armadura": [1,2,2,3,4,4,5,6] 
+            }
+        },
+        {   
+            "name": "DRUIDA",
+            "modVida": 8,
+            "habilities": [
+                "Diferente das outras namees, o druida não pegará habilidades todos os níveis, porém ao passar de nível ele poderá escolher uma de suas posturas para melhorar a escolha do jogador, porém o mesmo ainda ganhará habilidades no nível 2/4/6/8/10",
+                "Posturas: É uma habilidade do Druida que o permite assumir traços animais e nenhuma das posturas gasta nem movimento nem ação, porém você pode trocar de posturas tantas vezes você tiver ações por turno, sendo elas:",
+                "   Postura felina: o Druida fica com traços físicos semelhantes à de um felino, ganhando 1 ataque físico extra no turno da ativação.",
+                "   Postura de urso: o Druida fica com traços semelhantes à de um urso, ele ganha também 2 de deslocamento nessa postura, desta forma ele é capaz de deferir um golpe que deixará a criatura que recebeu o golpe paralisada caso acerte e ele não passe no teste, dificuldade 11 + sabedoria - força de vontade. (Essa postura tem 3 turnos de recarga caso acerte o stun se não acertar não tem recarga).",
+                "   Postura de tartaruga: o Druida fica com traços semelhantes à de uma tartaruga, ganhando inclusive uma carapaça, ele recebe um escudo de 2(+1 a cada 2 níveis) de pv por oponente afetado, área 9 sqm enquanto estiver nessa postura e 2 de redução de dano geral", 
+                "   Postura de fênix: o Druida fica com traços físicos levemente de pássaro e seu corpo começa a esquentar muito, ele chega a ficar levemente vermelho. Nesta postura após acertar um inimigo a frente solta uma brasa de chama num triângulo de 3 sqm com seus ataques normais, devido ao calor advindo da fênix, dando dano normal ao 1º alvo além de ganhar 1 dado abaixo do seu dano normal nos inimigos secundários afetados.",
+                "(Nível 2) Companheiro de guerra: você consegue domesticar um animal para ser seu fiel companheiro nas batalhas, a águia tem 5 de pv * nível (seu nível) e ela dá (1d4*nível)/2 de dano (porém é a mais difícil de um oponente acertar), o urso tem 6 fixo + 8 de pv * nível e ele dá ((1d4*nível)/2+2, a pantera tem 2 fixo + 6 de pv * nível, ela dá (1d4*nível)/2 de dano mas tem 1 de aceleração. Todos os animais atacam sem que seja contado seu ataque da rodada após sua rodada. Caso seu pet seja morto, você poderá tentar comprar outra em algumas cidades. Porém isso não significa que você não tenha que se importar com o animal, visto que a ave só será fiel a você se você for fiel a ela e alimentá-la obviamente. Caso seu companheiro de guerra venha a falecer pode ressucitá-lo magicamente fora de combate (esta ação leva por volta de meia hora)",
+                "(Nível 4) Enraizar: prende os pés do inimigo por 2 turnos caso o inimigo não passe no teste, dificuldade 11 + sabedoria - força de vontade  (alcançando até 7 sqm de distância) causa 8 de dano. *Pode ser utilizado no lugar do movimento. (3 turnos de recarga)",
+                "(Nível 6) Armadura de espinhos: dá mais 3 de armadura e causa metade do dano causado de volta ao inimigo (a armadura dura até o fim da batalha ou até ser quebrada, inicialmente ela tem 6pv fixo + 4pv * nível) só pode ser usada a cada 4 turnos. Podendo agora ser conjurada em aliados. *Pode ser utilizado no lugar do movimento.",
+                "Druidas podem falar com animais, plantas e outros tipos de criaturas da natureza, tendo empatia e manipulação, carisma e inteligência pode convencê-los a te ajudar ou até mesmo lutar ao seu lado. Todo druida começa com herbalismo 1 e natureza 1."
+            ]
+        },
+        {   
+            "name": "PIRATA",
+            "modVida": 6,
+            "habilities": [
+                "Marca do pirata: O pirata sempre tem sua tripulação consigo em suas aventuras. Você pode escolher dois aliados para marcá-los com sua marca, sendo:",
+                "1 aliado principal (Imediato): Esse é seu braço direito e receberá 100% dos benefícios da marca.",
+                "1 aliado secundário (tripulação): Os aliados com essa marca recebem 50% dos benefícios recebidos pelo imediato.",
+                "O número de aliados secundários que você pode marcar aumenta de acordo com seu carisma. EX: Carisma 3 = 3 marcas para aliados secundários. Quanto mais carisma o capitão tiver, maior sua tripulação!",
+                "Não gasta nem movimento nem ação para colocar as marcas e pode trocá-las a cada 2 turnos.",
+                "Concede:",
+                "Imediato = 2 Regen + 2 AC",
+                "Tripulação = 1 Regen + 1 AC",
+                "Aumenta +1 em cada bonûs a cada ponto de Majestade.",
+                "Tiro da fortuna: Conjura uma bala mágica que aplica 1d6 + 1 Dano (Aumenta +1 a cada 3 níveis) e recebe 10 bronze caso acerte. Imediato também ganha 10 Bronze e tripulação 5",
+                "Black Flag: O pirata cura o imediato em 1d6 + (Modificador de Carisma)/2. E toda a tripulação na metade dessa cura. (3 Turnos de Recarga).",
+                "Frutos do Mar: O pirata pode comer uma misteriosa e mágica fruta do mar. Isso lhe concede: Cura = 1d4 + (Mod Carisma/2) e remove qualquer efeito adverso que tenha sobre ele. Pode ser usada mesmo stunado. (3 turnos de recarga)",
+                "(Nível 2) Luneta da Trapaça: Pode usar sua luneta mágica para que o PV e Nível da pessoa observada fique visível para si mesmo e sua tripulação toda.",
+                "(Nível 2) Akuma no Mi: Uma outra fruta mágica misteriosa pode ser ingerida pelo pirata ou dada para um membro da tripulação, essa fruta dá ao seu consumidor um talento aleatório até o fim do dia. (Não pode ser poder da fé). (Usada 1x ao dia).",
+                "(Nível 3) Cara ou Coroa: Joga uma moeda e tem 50% de chance de vencer. Caso     vença, o pirata terá sua próxima ação com efeito dobrado (2x), seja de dano ou cura, podendo escolher dar o bônus para a próxima ação de algum membro da tripulação. Caso perca, o pirata perde seu turno de ação. Vale lembrar que pode segurar o bonûs e na próxima ação tentar o Dobro ou Nada, hehe. Não gasta nem movimento nem ação para jogar a moeda.",
+                "(Nível 4) Troca quase justa: Pode usar seu movimento para trocar magicamente de lugar com o Imediato,  pode ser usado fora do seu turno, porém, nesse caso perde seu próximo turno de ação. (3 Turnos de Recarga).",
+                "(Nível 5) Moeda da Sorte: Arremessando uma moeda mágica para o alto, a moeda fica planando a 4 metros do chão sob uma área de 5x5 Sqm durante 3 turnos. Qualquer dano que a moeda sofra é espalhado para todos inimigos que estiverem dentro da área. Não Gasta movimento ou ação para jogá-la. Cada inimigo atingido, concede 10 de Bronze ao pirata e imediato, 5 bronze para tripulação. (3 Turnos de recarga, contados a partir do término da habilidade.)",
+                "Grandes navegadores, os piratas, já sabem por natureza como cuidar e conduzir embarcações, Lutando em alto mar, todas as marcas são consideradas imediato (principal) e tem sua eficiência dobrada para 4 Regen e 4 AC.",
+                "O pirata pode escolher ter seu acerto baseado em Carisma."
+            ]
+        },
+        {   
+            "name": "SAMURAI",
+            "modVida": 4,
+            "habilities": [
+                "Os samurais são realmente impressionantes, tendo um corte extremamente preciso sem perder agilidade no processo, ganhando +2 de AC.",
+                "Samurai toda vez que atinge uma oponente causa sangramento stack máximo 10. (o dano do sangramento é contado no final do turno do samurai). Se acertar crítico, o stack automaticamente sobe 2 stacks. Cada stack da 5% da vida atual do alvo e dura até o alvo se cuidar ou se curar (talento cura).",
+                "Corte exemplar: O samurai perde um turno focando, ganha +5AC e efetua um corte na diagonal realmente rápido pegando 4 sqm em linha reta, esse ataque causa o dobro de dano e reduz 1 de AC e 1 de CA do oponente durante 2 turnos contando 3 stacks de sangramento. (usado cada 3 turnos).",
+                "(Nível 2) Vínculo virtuoso: Um samurai e sua lâmina tem um vínculo eterno, caso a mesma seja quebrada o samurai pode invocar a mesma usando seu próprio sangue, sacrificando assim 10% da vida total.",
+                "(Nível 3) Corte vital: O samurai é capaz de perceber um ponto fraco no inimigo e atacá-lo com precisão absurda. Desfere um golpe que dá o dano da arma + [(a diferença da vida atual do inimigo - sua vida atual)/5, mínimo 0] ignorando qualquer armadura. (Usado a cada 3 turnos)",
+                "(Nível 4) Corte fatal: O samurai percebe que o inimigo está fraco e realiza um ataque fatal, o matando-o no mesmo instante. Quando uma criatura está com menos de 10% de vida, você automaticamente a aniquila, mesmo que não esteja no seu turno em até 4 sqm, porém fazendo isso seu turno é sacrificado.",
+                "(Nível 5) Bakuhatsu: Você explode todas as stacks dos inimigos, cauterizando elas porém dando 1d4 de dano em área por cada marca."
+            ]
+        },
+        {   
+            "name": "NINJA",
+            "modVida": 6,
+            "habilities": [
+                "Os ninjas são realmente rápidos e usam muitos selos, sendo capazes de criá-los ou aprendê-los, o ninja tem naturalmente +1 CA e +1 de deslocamento. O ninja pode fazer selos sem ser revelado, ou seja, pode ficar tacando selos de algum matinho se quiser, porém não é recomendado deixar seu time sem você ajudando decentemente.",
+                "Toda vez que o ninja for usar um selo, seja ele qual for, não perde nem movimento, nem ação. Porém está limitado a usar 1 selo por turno independente de aceleração.",
+                "(INATA)Adaga debilitadora: O ninja arremessa uma adaga que desabilita (silence) todos os inimigos acertados numa área circular de 9 sqm (raio). A adaga dura 2 turnos. No turno que a adaga é arremessada quem for afetado não poderá usar habilidade, porém caso alguém isole ou destrua a adaga no próximo turno todos voltam a poder usar suas habilidades. (usado a cada 3 turnos, contando a partir do final da habilidade)",
+                "Selo do veneno: Envenena o alvo causando 1d6 dano por 2 turnos (o dado é rolado nos 2 turnos) (usado a cada 3 turnos, contando a partir do final da habilidade)",
+                "(Nível 2) Selo de rastreamento: Rastreia o inimigo porém não dá a localização exata usando marcação de selos ou cães farejadores caso haja. Esta habilidade funciona em até 5 km de distância.",
+                "(Nível 2) Jutsu de substituição: Após o inimigo rolar o acerto o ninja pode escolher “substituir” seu corpo em um tronco, e indo parar em outro lugar na batalha em até 3 sqm daquele ponto. (5 turnos de recarga)",
+                "(Nível 3) Venha pra perto de mim: O ninja pode usar de sua destreza para puxar um inimigo para perto dele com a utilização de uma corrente ou corda (que o ninja precisará ter) com dificuldade 8 - (destreza (ninja)*2) + a CA do oponente até 4 sqm, acima disso aumenta a dificuldade em 1 a cada 1 sqm além dos 4 iniciais. Se o alvo for puxado ele fica 1 turno stunado. (3 turnos de recarga)",
+                "(Nível 3) Kinobiri (Técnica de andar pelas paredes): O ninja consegue concentrar sua energia nos pés de modo que ele consegue escalar paredes/teto/andar na água.",
+                "(Nível 4) Selo de vulnerabilidade: marca um alvo deixando-o vulnerável e todo o dano que o alvo tomar independente de ser do ninja ou não será amplificado em +2 durante 2 turnos.",
+                "(Nível 5) Névoa: Você pode utilizar um selo que pode entrar numa espécie de fumaça por 2 rodadas e você fica inalvejável neste tempo e pode atacar enquanto isso. (3 turnos de recarga)"
+            ]
+        },
+        {   
+            "name": "NECROMANTE",
+            "modVida": 6,
+            "habilities": [         
+                "Os necromantes, tem capacidade de falar com os mortos, sendo assim podem tentar reviver certos cadáveres não só para conversar com eles, mas também para lutar ao seu lado. Necromantes também podem sentir a presença em forma de repulsa por seres celestiais e eles se sentem bem quando estão perto de criaturas que seu poder é advindo das trevas. Necessitam poder da fé ou arte da magia, lembrando que o poder da fé pode ser também usado para criaturas das trevas. Limite de 4 invocações ativas tanto fora quanto dentro de combate.",
+                "Criar esqueleto, sempre que for invocar pela primeira vez esqueletos em combate, pode invocar 2 de uma vez. Tem limite de 4 esqueletos ativos por combate (aumentando 3 a cada ponto de invocação):",
+                "Com osso: Cria um esqueleto a partir de um cadáver que possui 8PV 3AC 12CA e bate com um osso de 1d6 dano (14 DE MANA).",
+                "Nível 3: Esqueletos agora são levantados com uma machado que bate 1d8 + 1",
+                "Nível 5: Esqueletos agora são levantados com um arco que bate 1d10 em até 5 sqm",
+                "Nível 7: Esqueletos levantados agora são magos, dando dano de 1d12 em até 6 sqm",
+                "Nível 10: Pode sacrificar 7 esqueletos para criar um esqueleto gigante que tem 50 PV e bate 2d10",
+                "Sem Osso: Cria um esqueleto sem precisar de um cadáver, esse esqueleto possui 7PV 2AC 10CA bate 1d6 (Ao criar o jogador joga um dado de 1d4 turnos)(18 DE MANA)",
+                "Cura Negra: O Necromancer usa uma cura negra, capaz de curar 1d4 + int as suas criaturas, se usado em inimigo ou aliado não morto vivo causa 1d4 dano) (6 DE MANA)",
+                "(Nível 2) Explodir cadáveres: sempre que tiver cadáveres o necromante irá sentir e poderá usar esta habilidade para dar 1d8 de dano + int em até 3 sqm sendo o dano a 1 sqm é 100%, a 2 sqm 75% e a 3 sqm 50%. Máximo de cadáveres que podem ser explodidos simultaneamente são 2. Lembre-se que se usar esta habilidade o corpo da criatura fica inutilizável para outras habilidades.",
+                "(Nível 3) Minha armadura vem do seu sangue: O necromante pode absorver 2 de pv de cada inimigo e aliado também se este assim quiser ganhando 1 de armadura a cada 2 de pv absorvido, durante 4 turnos a armadura de sangue o protegerá, após isso a armadura do necromante volta ao normal. (50% DE MANA)",
+                "(Nível 4) Alma corrompida: Necromantes podem beber sangue de inimigos ou de aliados para se recuperar (1d10 + 50% de int). Obs: se a criatura estiver morta o necromante recupera 30% do seu pv total se beber o sangue.",
+                "(Nível 5) Levantar cadáver: o necromante marca o chão numa área de 3 sqm e todas as criaturas nessa área levantam do chão e obedecem às ordens do necromante. Criaturas reanimadas sofrem dano dobrado de luz e curas normais. Esta habilidade deixa o necromante 1 turno sem poder fazer nada devido ao esforço da magia."
+            ]
+        },
+        {   
+            "name": "DOBRADOR DE FOGO",
+            "modVida": 8,
+            "habilities": [
+                "Dobradores de fogo são provavelmente os mais letais dos dobradores, agora ele pode atear fogo no local, de acordo com o ambiente o fogo pode ou não se espalhar, se for num ambiente propício o fogo se aumentará em 1sqm por turno para todos os lados, porém num ambiente pouco propício irá levar até 3 rodadas para ele se espalhar 1 sqm para cada lado ou nem se espalhará. Caso o fogo fique muito grande (maior que 8sqm total) todos numa distância de (tamanho do fogo + 3 sqm) são afetados pela fumaça, que reduz o acerto e esquiva em 3, inclusive o dobrador de fogo visto que isso é causa do monóxido de carbono. Caso alguém pise no fogo, tomará 1d4 de dano.",
+                "Chamas eternas: Essa habilidade a cada vez que é conjurada tem um efeito diferente até a 4ª conjuração, depois volta a primeira novamente, a menos que o dobrador mude de alvo ou erre alguma skill (isso zerará novamente o contador). (4 de energia)",
+                "Arremesso: Lança um ataque de fogo no inimigo (precisa acertar a esquiva do inimigo), da 1d10 de dano mágico.",
+                "Intensificação: Aumenta as chamas no inimigo acertado com a habilidade anterior fazendo com que dê o dano do arremesso  +2 (não precisa acertar o inimigo)",
+                "Absorção: Absorve o fogo do inimigo servindo como uma pele de fogo para você mesmo, a pele não dá dano em inimigos próximos, mas todos os inimigos próximos à você ficam fragilizados aos ataques contendo fogo (não só seus), tomando +50% de dano mágico (para todo dano de fogo)",
+                "Cessar fogo: absorve todo fogo do combate ganhando +1 de dano para cada 3 sqm de fogo até o final do combate.",
+                "Encantar arma: Pode encantar a própria arma ou de um aliado aumentando o dano do inimigo em 1d6 (mágico) que dura 3 turnos. (12 de energia). Não gasta mais movimento nem ação. Agora a única limitação para dobradores será sua energia, caso tenha energia, ele poderá encantar suas armas ou de seus aliados como lhe for conveniente.",
+                "(Nível 2) Ringue de fogo: O dobrador faz um ringue de 6x6 SQM em forma circular que o beneficia com bônus de combate através das chamas, sendo eles +1 de dano, +1 de AC e +1 de CA(O dobrador tem que estar dentro círculo), se os inimigos estiverem dentro do ringue, perdem 1 de dano, 1 de AC e 1 de CA, tendo em vista que o inimigo ficará exausto dentro do ringue de fogo. O ringue dura 2 turnos. (10 de energia)",
+                "(Nível 3) Cauterização: o dobrador de fogo pode cauterizar machucados para que os mesmos parem de sangrar, porém a pessoa que for afetada pela cauterização toma 1d4 de dano. (2 de energia)",
+                "(Nível 3) Explosão de fogo: o dobrador prepara durante um turno uma bola de fogo que aplica dano em área, sendo que precisa de um alvo, acertando o alvo a bola de fogo explode e aplica o dano em área (4x4 SQM em área circular sendo o alvo o centro) 1d10 + 4 de dano. (16 de energia)",
+                "(Nível 4) Lanças de fogo: Arremessa 3 lanças de fogo no inimigo, podendo jogar todas em 1 só, ou dividir elas em até 3 inimigos, deixa os inimigos marcados, qualquer aliado que der dano em um inimigo marcado dará +1 de dano (por marca que o inimigo tiver). Cada lança da 1d12 de dano. (30 de energia)",
+                "(Nível 5) Ganha domínio sobre a evolução do elemento: Raio. A partir de agora ataques com armas encantadas são eletrificados e tem a chance de 10% de deixar o inimigo paralisado.",
+                "Dobradores agora são extremamente afetados pelo contorno, um exemplo disso é que a chuva deixa automaticamente todas as pessoas com o atributo “molhado” confira os “elementos” no livro dos jogadores para saber mais. Caso os dobradores estejam em seu ambiente, eles gastam metade da energia da habilidade para conjurar suas habilidades.",
+                "Observação: Lembrando, você poderá dobrar o elemento da maneira que achar mais conveniente, dependendo somente da quantidade de energia atual e necessária."
+            ]
+        },
+        {   
+            "name": "DOBRADOR DE TERRA",
+            "modVida": 10,
+            "habilities": [
+                "Dobradores de terra são os dobradores mais completos quando se fala em relação a porradaria, eles são lutadores espetaculares, pois absorvem bastante dano e conseguem devolver um bom dano. Se estiver num ambiente propício sua armadura de areia dobrará de regeneração.",
+                "Impacto terreno: Essa habilidade a cada vez que é conjurada tem um efeito diferente até a 4ª conjuração, depois volta a primeira novamente, a menos que o dobrador mude de alvo ou erre alguma skill (isso zerará o contador). (10 de energia)",
+                "Pisão: Pisa no chão fazendo uma grande massa de terra se desprender do chão e acertar o inimigo (precisa acertar a esquiva do inimigo) e da 1d6 de dano mágico.",
+                "Meteorito: A parte de terra que foi arremessada é trazida de volta em alta velocidade. Caso acerte, o inimigo tomará 1d6 de dano e terá 50% de chance de ficar paralisado.",
+                "Impacto corporal: O dobrador de terra se lança no inimigo que foi acertado com o meteorito acertando-o precisamente (só não pode dar falha crítica) dando 1d10 de dano e tendo 50% de chance de derrubá-lo. Caso crite o inimigo toma dano dobrado e é derrubado.",
+                "Regeneração de armadura (a partir do nível 2): Recupera 12 de pv de sua armadura.",
+                "Encantar arma: Pode encantar a própria arma ou de um aliado aumentando o dano do inimigo em 1d6 (mágico) que dura 3 turnos. (12 de energia). Não gasta mais movimento nem ação. Agora a única limitação para dobradores será sua energia, caso tenha energia, ele poderá encantar suas armas ou de seus aliados como lhe for conveniente.",
+                "(Nível 2) Armadura de areia: O dobrador de terra possui em si uma pele de areia que o protege, a mesma tem pv de 25% da vida do personagem e se regenera em 3 por turno. Caso a mesma seja quebrada demora 4 turnos para a mesma voltar e ela voltará com 5 de pv.",
+                "(Nível 3) Garras de areia: A partir de agora o dobrador de terra não precisará mais de armas. O dano das garras de areia segue o dano das armas porém com o acréscimo da tabela ao final da página.",
+                "(Nível 4) Na areia me sinto em casa: Toda vez que o dobrador de terra estiver em sua armadura de areia, o mesmo terá redução de 2 de TODAS AS FONTES DE DANO (incluindo sangramentos, venenos e afins) e +1 de dano.",
+                "(Nível 5) Ganha domínio sobre a evolução do elemento: Pedra. A partir de agora ataques com armas encantadas têm chance de 10% de chance de petrificar o alvo.",
+                "Dobradores agora são extremamente afetados pelo contorno, um exemplo disso é que a chuva deixa automaticamente todas as pessoas com o atributo “molhado” confira os “elementos” no livro dos jogadores para saber mais. Caso os dobradores estejam em seu ambiente, eles gastam metade da energia da habilidade para conjurar suas habilidades.",
+                "Observação: Lembrando, você poderá dobrar o elemento da maneira que achar mais conveniente, dependendo somente da quantidade de energia atual e necessária."
+            ],
+            "table": {
+               "nivel": [3, 6, 8, 10],
+               "dano": [1, 2, 3, 4] 
+            }
+        },
+        {   
+            "name": "DOBRADOR DE ÁGUA",
+            "modVida": 6,
+            "habilities": [
+                "Dobradores de água são os dobradores que conseguem ao mesmo tempo dar dano e ajudar seu time. Se estiver num ambiente propício sua ganha regen de vida de 3 por turno para si e 1 para o grupo.",
+                "Tentáculos de Água: Essa habilidade irá invocar 4 tentáculos de água ao redor do dobrador de água e cada conjuração terá um efeito adverso de acordo com a escolha do player (10 de energia para todas as formas):",
+                "Chicote de água: Um dos tentáculos se transforma em um chicote de água (precisa acertar a esquiva do inimigo) e da 1d6 de dano mágico.",
+                "Tentáculo defensor: Um dos tentáculos serve de escudo e reduz durante 1 turno todo o dano sofrido em 4. Porém usado fora do turno gastará turno completo.",
+                "Tentáculo curativo: Um dos tentáculos fica com uma aura levemente verde e cura um aliado/si em 1d6.", 
+                "Laço D’água:  Um dos tentáculos se agarra num inimigo o impossibilitando de andar por 1 turno, da 1d4 de dano. (Essa habilidade tem 1 turno de recarga)",
+                "Encantar arma: Pode encantar a própria arma ou de um aliado aumentando o dano do inimigo em 1d6 (mágico) que dura 3 turnos. (12 de energia). Não gasta mais movimento nem ação. Agora a única limitação para dobradores será sua energia, caso tenha energia, ele poderá encantar suas armas ou de seus aliados como lhe for conveniente.",
+                "(Nível 2) Vínculo aquoso: Você usa a água para curar todos os aliados em 1d6 (a cada 3 níveis) (18 de energia)",
+                "(Nível 3) Estilo água: seu corpo se torna de água durante 2 turnos, aparentemente você está exatamente igual, porém caso alguém te acerte o dano se for físico passará direto sem te dar dano, fogo te dará somente metade do dano nessa forma, porém raio te dará o dobro de dano. (50% da energia total).",
+                "(Nível 4) Maré alta: Cria uma tsunami no campo de batalha que pega numa reta de até 5 sqm de comprimento e 3 sqm de largura para derrubar os oponentes no chão. Os oponentes derrubados ficam 1 rodada sem jogar. Para resistir a onda sem cair a dificuldade é 11 + sabedoria do invocador - força de vontade. Da 1d6 de dano em área. (80% da energia total).",
+                "(Nível 5) Ganha domínio sobre a evolução do elemento: Gelo. A partir de agora ataques com armas encantadas tem chance de 10% de chance de congelar o alvo.",
+                "Dobradores agora são extremamente afetados pelo contorno, um exemplo disso é que a chuva deixa automaticamente todas as pessoas com o atributo “molhado” confira os “elementos” no livro dos jogadores para saber mais. Caso os dobradores estejam em seu ambiente, eles gastam metade da energia da habilidade para conjurar suas habilidades.",
+                "Observação: Lembrando, você poderá dobrar o elemento da maneira que achar mais conveniente, dependendo somente da quantidade de energia atual e necessária."
+            ]
+        },
+        {   
+            "name": "DOBRADOR DE AR",
+            "modVida": 8,
+            "habilities": [
+                "Dobradores de ar são lutadores escorregadios, ardilosos, e perigosos. Todo golpe do dobrador de vento resvala nos inimigos dando 50% do dano em todos os inimigos, e caso esteja lutando em lugares em grande altitude ou lugares com vento forte todo o dano que ele der em um inimigo espalhará 100% para os outros em até 9x9 sqm do primeiro inimigo acertado",
+                "Vendaval Triunfante:  Essa habilidade a cada vez que é conjurada tem um efeito diferente até a 4ª conjuração, depois volta a primeira novamente, a menos que o dobrador mude de alvo ou erre alguma skill (isso zerará novamente o contador). (10 de energia) (Aumenta 1 dado a cada 4 níveis de todas as etapas)",
+                " 1 - Chicote de vento: Faz um chicote de vento que dá 1d6 de dano mágico e o marca com a marca específica dos ventos(vendaval), essa marca só funciona em 1 inimigo por vez, faz com que até o final do combate todas as habilidades que essa pessoa tomar ricocheteiam para próxima dando 50% de dano no segundo.",
+                " 2 - Ventilando a arena: Da 1d6 em área e marca todos os inimigos em até 5 SQM do dobrador com o status ar (não confunda esse status com o status vendaval).",
+                " 3 - Pernada vendaval: Dá uma pernada em um alvo, se o inimigo for acertado ele fica sem  regeneração de mana/energia por 2 turnos ou coloca pelo menos 1 turno de recarga nas habilidades do oponente. Da 1d8 de dano.",
+                " 4 - Fúria dos ventos: Para cada inimigo com o status vendaval ou com o status vento o dobrador ganha +1 de dano nessa habilidade, essa habilidade traz um leve tornado de golpes que acerta até 5 SQM do dobrador todos os alvos em volta, dando 1d8 de dano. Inimigos na área devem passar no teste de dificuldade 11 + sabedoria do dobrador - força de vontade para não serem arremessados para cima (ficam 1 turno no ar).",
+                "Encantar arma: Pode encantar a própria arma ou de um aliado aumentando o dano do inimigo em 1d6 (mágico) que dura 3 turnos. (12 de energia). Não gasta mais movimento nem ação. Agora a única limitação para dobradores será sua energia, caso tenha energia, ele poderá encantar suas armas ou de seus aliados como lhe for conveniente.",
+                "(Nível 2) Ventania cortante: Permite que o dobrador de ar tente acertar a magia do oponente e cortá-la ao meio, cancelando a mesma e ainda tendo a chance de acertar um resquício do ataque (1d6) no oponente mesmo não sendo seu turno, e no seu turno terá perdido somente a ação. A dificuldade deste feito é baseada em dificuldade 10 - sua sabedoria + inteligência do oponente. (16 de energia)",
+                "(Nível 3) Explosão de ar: o dobrador de ar se lança para cima e depois usa a força do ar mais a gravidade para chegar no chão com alta aceleração, rompendo a barreira do ar e criando uma onda que arremessa inimigos a até 5 sqm de distância. Para resistir o inimigo precisa passar num teste de dificuldade 12 + sabedoria do invocador - sabedoria do oponente. Inimigos acertados por essa habilidade tomam 1d10 da explosão + 1d4 de queda (se caírem), tendo chance de 25% de serem atordoados com a pancada. (24 de energia).",
+                "(Nível 4) Leve como o ar: Um dobrador de ar pode se arremessar até 7 sqm ou 10m de altura projetando o ar embaixo de seus pés a qualquer momento (gasta o equivalente a regen de energia + 1 por turno).",
+                "(Nível 5) Dobradores de ar não têm evolução elemental, mas eles ganham uma energia ao redor o que significa que caso eles errem o ataque por até 4 de acerto o golpe não acertará, mas a energia ao redor acertará o inimigo dando o dano normal do ataque -1. Eles ao chegar no nível 5 também ganham +3 de CA." ,
+                "Dobradores agora são extremamente afetados pelo contorno, um exemplo disso é que a chuva deixa automaticamente todas as pessoas com o atributo “molhado” confira os “elementos” no livro dos jogadores para saber mais. Caso os dobradores estejam em seu ambiente, eles gastam metade da energia da habilidade para conjurar suas habilidades.",
+                "Observação: Lembrando, você poderá dobrar o elemento da maneira que achar mais conveniente, dependendo somente da quantidade de energia atual e necessária."
+            ]
+        },
+        {   
+            "name": "BRUXO",
+            "modVida": 6,
+            "habilities": [
+                "Os bruxos necessitam de sua varinha ou cajado para soltar quaisquer feitiços até o level 10.",
+                "Magias",
+                "Conjunctivitus: afeta os olhos e a visão da vítima, fazendo a vítima perder 3 de AC por 3 rodadas (usado a cada 5 rodadas)(8 DE MANA).",
+                "Svit: solta um raio direcionado ao alvo tirando 1d6 + 50% da int de dano (6 DE MANA).",
+                "Orieli: Concentra suas energias soltando um raio de maior poder instantaneamente e tirando 1d8 + int (18 DE MANA)",
+                "(Nível 2) Aparo mágico: Toda vez que uma magia for lançada o bruxo pode tentar aparar a magia, porém terá que conseguir ganhar do rival num teste no d20 + int contra d20 + int/sab(dependendo do adversário) (2 turnos de recarga)(24 DE MANA)",
+                "(Nível 2) Episkey: Cura pequenos machucados. Curando cortes superficiais, ou, 1d4 de cura. Parando também sangramentos caso haja. Essa magia não tem limite e pode ser usada quantas vezes o usuário achar prudente(4 DE MANA).",
+                "(Nível 3) Expelliarmus: Desarma a vítima, para resistir o inimigo deve passar num teste de dificuldade 11 + sua inteligência - força dele. (4 turnos de recarga) (30 DE MANA)",
+                "(Nível 4) Aresto Momentum: cria um colchão de ar que suaviza a queda (e pode salvar o time todo) (esse tempinho depende do narrador)(10 DE MANA).",
+                "(Nível 4) Aparatar: o bruxo pode utilizar seu movimento para aparatar ao invés de se movimentar normalmente, a diferença é que o deslocamento é calculado em cima de destreza e o aparatar será em cima da inteligência, o cálculo da distância do aparatar é (mod de inteligência/2)+1 (4 DE MANA)",
+                "(Nível 5) Estupefaça: Joga a vítima para longe. Faz a pessoa desmaiar. Para resistir o inimigo fará um teste de dificuldade 7 + sua inteligência - sabedoria dele todo turno e caso receba dano o mesmo acordará (5 turnos de recarga) (36 DE MANA).",
+                "(Nível 6) Protego: faz uma barreira mágica que faz com que feitiços/magias pequenos ricocheteiam em quem os usou (inicialmente segura até 15 de dano, caso a magia dê mais que isso o escudo é destruído e o bruxo sofrerá o dano que passou da barreira), caso após ricochetear a magia do oponente acerte alguém essa magia terá perdido 50% do seu dano (usado 3x por dia).",
+                "(Nível 7) Expecto Patronum: Conjura um animal de energia positiva. Este animal dura 3 rodadas e da 1d12 de dano, porém este animal é inalvejável. Repele dementadores e pode ser usado para enviar mensagens. (usado 1x por dia)",
+                "(Nível 8) Petrifucus Totatulus: Petrifica o alvo por 2 turnos. Para resistir o inimigo fará um teste de dificuldade 6 + sua inteligência - sabedoria dele (usado 1x por dia)",
+                "(Nível 9) Immobilus: Paralisa vários alvos por 1 turno. Para resistir o inimigo fará um teste de dificuldade 8 + sua inteligência - sabedoria dele. (1x por combate)",
+                "Truques",
+                "Accio -e o nome do objeto- traz o objeto para você (1x por combate ou se usado fora de combate é ilimitado)",
+                "Aparecium faz tintas ou objetos invisíveis se tornarem visíveis. (Ilimitado e só pode ser usado fora de combate)",
+                "Wingardium leviosa: eleva objetos a uma certa altura calculada da seguinte forma: a cada (modificador de inteligência + nível) o bruxo consegue levantar 10 kg por metro de altura (a cada metro aumentado dobra a dificuldade de levantar o objeto)",
+                "(Nível 2) Ascendio: Quem diz este feitiço é lançado imediatamente para cima.",
+                "(Nível 2) Lumus: Cria luz na ponta da varinha.",
+                "(Nível 2) Nox: Desfaz a luz produzida pelo feitiço Lumus.",
+                "(Nível 3) Bombarda: Causa uma mini explosão deixando um buraco no alvo.","Usado para abrir fechaduras mas faz muito barulho.",
+                "(Nível 3) Colloportus: Tranca portas.",
+                "(Nível 4) Diminuendo: Diminui o tamanho do objeto selecionado.",
+                "(Nível 4) Engorgio: Faz com que o alvo cresça, aumente de tamanho.",
+                "No nível 10 os bruxos podem começar a aprender sobre as maldições imperdoáveis, mas qualquer bruxo que ousar usar essas habilidades mesmo que seja contra o pior inimigo será perseguido pelo ministério da magia e será preso em Azkaban.",
+                "Bruxos são exímios ritualistas e normalmente a fonte de seus poderes está na energia da noite, principalmente de lua cheia, eclipse e lua de sangue. Portanto, em qualquer um desses casos o bruxo ganhará +2 de inteligência temporariamente. Necessitam a arte da magia."
+            ]
+        },
+        {   
+            "name": "PALADINO",
+            "modVida": 10,
+            "habilities": [
+                "Até o último homem: O Paladino caso chegue a 0 PV pode continuar lutando até - (5 x nível) de PV se for para proteger aliados sem fazer teste, inocentes ou seres indefesos. (Passivo)",
+                "Presença divina (passivo):",
+                "Se o paladino usar armas de duas mãos: +2 de acerto para si e +1 de dano para si e seus aliados",
+                "Se o paladino usar arma de uma mão com escudo: +1 de resistência mágica para seus aliados(e si mesmo), ganha também +2 de PV (por nível) e +2 de armadura (fixo) para si",
+                "Mãos Divinas: ",
+                "Level 1: cura a si mesmo ou aliado que está em até 1 sqm do paladino (1d6 de cura) neutralizando venenos ativos ou curando uma doença. Usado a cada 3 turnos. Pode ser usado fora de combate com mais liberdade, porém em excesso cansa o paladino.",
+                "Level 3: cura a si mesmo ou aliado que está em até 2 sqm do paladino (1d10 de cura) neutralizando venenos ativos. Usado a cada 3 turnos. Pode ser usado fora de combate com mais liberdade, porém em excesso cansa o paladino.",
+                "Level 5: cura a si mesmo ou aliado que está em até 2 sqm do paladino (1d10 + 1d4 de cura) neutralizando venenos ativos. Usado a cada 3 turnos. Pode ser usado fora de combate com mais liberdade, porém em excesso cansa o paladino.",
+                "Level 7: cura a si mesmo ou aliado que está em até 3 sqm do paladino (1d10 + 1d8 de cura) neutralizando venenos ativos. Usado a cada 3 turnos. Pode ser usado fora de combate com mais liberdade, porém em excesso cansa o paladino.",
+                "Level 10: cura a si mesmo ou aliado que está em até 3 sqm do paladino (2d12 de cura) neutralizando venenos ativos ou curando uma doença. Usado a cada 3 turnos. Pode ser usado fora de combate com mais liberdade, porém em excesso cansa o paladino.",
+                "Golpe celestial: O Paladino envolve apenas a sua arma com uma aura divina dourada, aumentando severamente o dano do seu próximo ataque em +2 e recebendo +2 de AC para acertar seu alvo. Funciona apenas em ataques corpo a corpo (Causa o dobro de dano total em criaturas das trevas). Usado a cada 3 turnos.",
+                "(Nível 2) Amigos para sempre: O paladino pode tentar entrar na frente para tomar o dano no lugar do aliado sem perder o turno da próxima rodada, caso o dano seja físico você receberá o dano todo, porém em caso de magias, você e seu aliado dividirão o dano meio a meio, você ganha 2 de redução de dano após usar essa habilidade, porém só serve pra a receber 1 ataque (só reduz o dano que já passou da armadura). (Recarga a cada 4 rodadas)",
+                "(Nível 3) Me dá um abraço (passiva): Quando estiver lutando próximo a aliados, ganha +4 de pv por nível.",
+                "(Nível 4) Inspiração grupal: Você pode dar um grito fervoroso que motiva todos Qseus aliados. Eles recebem (assim como você) +1 em todas as rolagens (deles e não dos oponentes) até o final da batalha.",
+                "(Nível 5) Punição divina: O Paladino lança um raio que ocupa 1 sqm e anda em linha reta por 7 sqm. Ao tocar em um inimigo o Raio causa stun instantâneo de 1 Turno e causa 1d8 Dano (Ganha + 2 Dano fixo a cada ponto de Determinação)",
+                ".Caso o alvo seja um ser das trevas o Raio para nele ao invés de continuar a se movimentar e causa efeito dobrado (Stun e Dano)",
+                ".Usa-se força de vontade como Acerto, visto que não é magia teleguiada e sim força divina. (3 Turnos de Cooldown)."
+            ]
+        },
+        {   
+            "name": "BARDO",
+            "modVida": 6,
+            "habilities": [
+                "Bardos transformam sua arte em magia, sendo focado em inspirar aliados e desmoralizar oponentes. Já no início da luta o bardo ganha +5 de iniciativa para começar o combate ao som de sua música. Bardos também já possuem seus instrumentos no início da campanha. Lembre-se que você só conseguirá tocar uma música por vez então pense bem e todas as suas músicas contam como ação.",
+                "Não vou dar pra trás: Começa a tocar sua música e tem chance de amedrontar inimigos tirando assim 1 turno deles. Chance de paralisar dificuldade 9 + carisma do bardo - sabedoria do oponente. Cada oponente acertado pela paralisia do bardo dá um adicional de +2 de dano no próximo ataque vindo do bardo de forma direta ou indireta. (3 turnos de recarga)",
+                "Toss a coin to your witcher: Bardo inicia uma sinfonia de música que inspira aliados, fazendo os mesmos receberem +1 de regeneração de vida, +1 de AC, +1 de CA e +1 de dano. (1x por combate e dura até o final do combate)",
+                "The Dragonborn Comes - Começa a tocar uma música que inspira 1 aliado com poderes curativos curando de acordo com o nível:",
+                "1 → 1d4 + (carisma/2)",
+                "5 → 1d10 + (carisma/2)",
+                "10 → 1d12 + carisma",
+                "Amigo estou aqui: Como o bardo não tem necessidade de bater ele escolherá um aliado e encantará os golpes dele, depois de encantado o aliado dará + 1d4 + talento do bardo (não podendo estacar 2 talentos do mesmo(ex: se a pessoa tiver fúria não pode colocar outra fúria), podendo ser esses talentos: fúria, especialista (sem aparo), letal, destruidor, acerto, esquiva e vampirismo) além do próprio dano do aliado do bardo.",
+                "(Nível 2) Sua magia é minha magia: bardo consegue com essa música repetir 1 habilidade usada por qualquer inimigo mesmo sem ter o requisito da habilidade (5 turnos de recarga), podendo escolher o modificador do inimigo ou o próprio.",
+                "(Nível 3) Jack of all trades, master of none (passiva): Diferente de pessoas normais o bardo pode tentar fazer coisas que não tenha perícia e acabar conseguindo, a dificuldade dessa perícia que ele não conhece pode variar de (6-16) dependendo do narrador. Se ele conseguir, ele adquire 1 ponto nessa perícia.",
+                "(Nível 4) Harmonia mortal: Bardo lança um ataque musical mágico que dá 1d8 de dano, esse dano atravessa qualquer tipo de resistência. (Ilimitado)",
+                "(Nível 5) Ligação monstruosa/Dó Ré Mi Fá: Bardo leva 1 turno invocando uma criatura do chão (20 pv, 4AC, 13CA e 1d10 + 3 de dano) e essa criatura é controlada pelo bardo com as notas Dó, Ré, Mi e Fá. (1x por dia)",
+                "Bardos são pessoas especialistas em lidar com pessoas, portanto o mesmo ganha +1 no modificador de carisma e +1 no modificador de inteligência para atingirem todas as suas perícias visto que bardos são extremamente versáteis."
+            ]
+        },
+        {   
+            "name": "ILUSIONISTA",
+            "modVida": 6,
+            "habilities": [
+                "Um ilusionista é um perito em trabalhar dentro da mente da pessoa utilizando sua magia, portanto, toda vez que o mesmo for tentar entrar na mente de alguém ele ganha +1 na rolagem dos dados. O mesmo necessita do talento “arte da magia” para que suas magias funcionem.",
+                "Técnica de transferência de mente: O ilusionista faz um teste de dificuldade 11 + sua inteligência - sabedoria do inimigo para tentar controlar o corpo dele (numa área de até 8 sqm) (se a vítima for level mais baixo diminui a dificuldade em 3 e a se a vítima for level mais alto aumenta a dificuldade em 3). A desvantagem dessa técnica é que o corpo do ilusionista fica extremamente vulnerável nesse momento e caso o inimigo encontre o corpo do ilusionista todo ataque dele terá dano dobrado, e caso o ilusionista erre ele irá demorar 1 turno para voltar a seu corpo (a cada 3 turnos). Essa magia dura 2 turnos ou até que o inimigo vença a dificuldade 11 + inteligência do inimigo contando somente com sua sabedoria e um d20. Lembrando que o ilusionista quando entra em algum corpo ele leva também o seu talento.",
+                "Técnica de clone eterno: Sempre que estiver em combate o ilusionista consegue criar 2 cópias idênticas a si mesmo na visão de seus oponentes, para identificar o certo você deverá passar num teste de dificuldade 10 + (inteligência do ilusionista - sabedoria do oponente), caso falhe baterá no vento ao invés de bater no ilusionista.",
+                "(Nível 2) Técnica de possessão das sombras: O ilusionista lança uma sombra de alcance de 3 sqm (9 a noite) que caso acerte o inimigo o mesmo terá seu corpo controlado pelo ilusionista fazendo todos os gestos que o ilusionista fizer. A dificuldade para o alvo é de 13 + inteligência (ilusionista) - sabedoria do inimigo todo o turno. Essa habilidade dura no máximo 3 turnos. (1x por combate)",
+                "(Nível 3) Técnica de estrangulamento pelas sobras: Após lançar a habilidade anterior o ilusionista pode estrangular o oponente usando as sombras, dando 30% da vida máxima do alvo como dano. (1x por combate)",
+                "(Nível 4) Técnica de troca de corpos com si mesmo: Você passa a invocar mais 2 clones além daqueles 2 que já ficam próximos à você e agora passa a poder se mover no campo de batalha trocando de lugar com qualquer um deles (recarga de 4 turnos). Os clones podem ir a até 9 SQM de distância do ilusionista.",
+                "(Nível 4) Arquiteto dos sonhos: Caso alguém esteja dormindo o ilusionista pode tentar entrar na mente da pessoa, a dificuldade para o oponente resistir é 15 + inteligência do ilusionista - sabedoria. E caso entre na mente da pessoa o ilusionista pode moldar a realidade na mente dessa pessoa. A pessoa que teve sua mente invadida não sabe o que aconteceu.",
+                "(Nível 5) Poder da mente: olhando nos olhos da pessoa em até 2 sqm o ilusionista pode fazer leves mudanças na realidade da pessoa fazendo a pessoa enxergar coisas que já aconteceram ou coisas imaginárias. Se for algo que possa intimidar o oponente a dificuldade é 12 + inteligência do ilusionista - sabedoria do alvo, se for algo bobo como uma disputa de bebida de bar a dificuldade para o oponente é 17 + inteligência do ilusionista - sabedoria do alvo.",
+                "(Nível 10) Obliviate: Altera ou apaga a memória da vítima. Para resistir o inimigo fará teste de dificuldade 10 + sua inteligência - inteligência do oponente (1x por combate)",
+                "Ilusionistas antes de tudo são muito entendedores da mente humana, por isso eles ganham +1 na rolagem de dados de carisma. Ilusionistas também fazem magias ou truques simples usando sua mente, sem parecer que estão fazendo magia. Ilusionistas podem fazer viagens ao astral enquanto dormem após o level 5."
+            ]
+        },
+        {   
+            "name": "TRANSMUTADOR",
+            "modVida": 10,
+            "habilities": [
+                "Transmutadores são personagens focados na transmutação de objetos, ou seja, ele cria selos (semelhantes a imagem acima) que podem tornar reais às vezes até dando vida a alguns objetos inanimados. O mesmo tem um grande conhecimento em misticismo (já começa com 1 nessa perícia mesmo sem gastar pontos). Pode invocar criaturas fora de combate, porém tem limite de 4 transmutações ativas tanto fora quanto dentro de combate. Passivamente o transmutador ganha 1 de constituição a cada 3 pontos de inteligência e 1 de inteligência a cada 3 pontos de constituição.",
+                "Torreta a postos: Cria um selo no chão que traz uma torreta a realidade, essa torreta tem alcance de 5 sqm, pode atirar para cima, para baixo e para 90º a cada lado (4 PV, 4 AC) e dano de 1d8 (usado a cada 3 turnos), lembrando que a mesma fica imóvel no local criado portanto não tem CA. Sacrifica 5 de bronze.",
+                "Sentinela: Cria um selo no chão que traz um aliado robô para o combate (12PV, 4AC, 14 CA, 1D8), essa habilidade sacrifica 4 de pv ou 25 de xp(1x por combate).",
+                "Transmutar: O transmutador consegue manipular a matéria com seu poder tornando-a outro objeto, quanto mais inteligente e mais conhecedor das magias melhor ele consegue usar essa habilidade. Algumas perícias que podem ajudá-lo a melhorar nisso são (ler, misticismo, leitura arcana, identificar magia, religião, engenharia, natureza, alquimia) porém normalmente depende do objeto a ser transmutado para verificar quais dessas perícias que realmente serão utilizadas para cada caso específico.",
+                "(NÍVEL 2) Sempre preso: Cria um selo no chão que levanta uma gaiola que trava o inimigo em um local por 1 turno porém a mesma é inquebrável, esta que se adapta ao tamanho do oponente (3 turnos de recarga), sacrifica um fio de cabelo.",
+                "(NÍVEL 3) Sua armadura é nada: Cria um selo no chão que sacrifica metade do pv atual para deixar um inimigo sem resistência nenhuma, ou seja, até o final do combate os ataques a esse inimigo serão diretamente na vida. (1 turno de conjuração) (1x por dia).",
+                "(NÍVEL 4) Leão de combate: Cria um selo que invoca um leão robótico para o combate (20 PV, 5AC, 16CA, 1D12+1D6), essa habilidade sacrifica 10% do seu pv e de todos os aliados(incluindo suas criações), lembrando, seu time toma o dano mas não sabe da onde veio, a menos que alguém tenha misticismo 3 ou +.",
+                "(NÍVEL 5) Meu corpo é minha armadura: Sacrifica uma parte do seu corpo para criar uma armadura em volta do corpo, devido ao sacrifício seu dano é penalizado em 1 e seu acerto é penalizado em 3, porém você ganha 10 de resistência natural e +10 de pv. Dura até que o combate acabe e lembre-se o membro não voltará, portanto, use com sabedoria.",
+                "(NÍVEL 6) Suplente perfeito: Sacrifica 10 de prata para criar um membro do corpo metálico, podendo ser do seu corpo ou de outro."
+            ]
+        },
+        {   
+            "name": "ALQUIMISTA",
+            "modVida": 6,
+            "habilities": [
+                "Alquimistas são personagens focados na criação de poções, os mesmos têm uma vasta opção de fabricação, indo de simples poções até mais complexas de acordo com seus estudos e conquistas. O mesmo ganha +2 em testes para criar novas poções (explicado melhor abaixo) e costumam conhecer muito sobre as ervas, portanto o mesmo inicia com herbalismo nível 1 mesmo sem gastar pontos Lembrando que todos os componentes podem ser encontrados em lojas de alquimia, loja de caça ou lojas de ervas e alguns também podem ser encontrados na natureza. Caso o alquimista tenha um laboratório alguns componentes ele conseguirá fazer bastando perguntar ao mestre sobre essa possibilidade, como por exemplo é a água desmineralizada. O alquimista pode também beber 1 poção por turno sem gastar movimento nem ação.",
+                "Obs: Caso queira fabricar poções, sua dificuldade é [(nível da habilidade - nível atual)*3 + 18  -  int], se ele conseguir ele passa a dominar a técnica. Se for alquimista como classe principal o nível atual terá peso dobrado no cálculo.",
+                "(INATA) Eu sou Alquimista: Ganha +1 de inteligência e dobra a possibilidade de fabricar novas poções como explicado acima.",
+                "Poções novas: O alquimista pode fazer quaisquer poções que imaginar, os ingredientes serão ditos pelo narrador assim como a dificuldade que pode variar de (9 a infinito, lembrando que para chegar a 25 basta tirar 20 no d20) + inteligência + perícia em alquimia. Depois de aprendida, quase todas as poções criadas serão enraizadas na memória de seu criador, bastando confirmar com o mestre da sessão. Lembrando que todas as poções lançadas precisam ser acertadas com a utilização da mira, a dificuldade vai aumentando de acordo com a distância, chegando a até 10 SQM o lançamento porém com dificuldade máxima a 10 SQM.",
+                "Poção de cura: começa o jogo já sabendo fabricar uma poção de cura simples que cura 10 de pv, que é uma planta muito comum em florestas. Outros tipos de poções podem ser aprendidas buscando conhecimento e aprendendo alquimia. (3 turnos de recarga)",
+                " - Nível 1 poção leve",
+                " - Nível 5 poção média",
+                " - Nível 10 poção grande",
+                "Poção de velocidade: Lança uma poção que levanta uma fumaça levemente branca em uma área de 9 SQM² onde todos afetados ganharão +3 de deslocamento durante 3 turnos. (2 turnos de recarga)",
+                "Poção ácida: Lança uma poção ácida roxa que pega em todos numa área de 9 SQM² onde todos os afetados tomarão 1d4 de dano + int, e terão toda sua cura reduzida pela metade durante 3 turnos. (2 turnos de recarga)",
+                "(NÍVEL 2) Poção de intensidade: Lança uma poção explosiva que causa uma fumaça verde onde todos os aliados afetados pela mesma receberão 2 de cura (+1 a cada 4 níveis) (+1 a cada 2 de inteligência) e cura dobrada de outras fontes sem ser a própria poção. Duração de 2 turnos. Àrea 3x3. (3 turnos de recarga)",
+                "(NÍVEL 3) Poção de aceleração: Essa poção necessita ser tomada, caso aconteça quem tomou essa poção terá +1 turno de ação a mais por 1 turno. (4 turnos de recarga)",
+                "(NÍVEL 4) Poção de resistência: Essa poção necessita ser tomada, caso aconteça quem tomou essa poção terá +1 de resistência natural(+1 a cada 4 níveis)(+1 a cada 3 de inteligência) a mais durante 2 turnos. (2 turnos de recarga)",
+                "(NÍVEL 5) Poção de fúria: Essa poção necessita ser tomada, caso aconteça quem tomou essa poção terá +2 de dano (+1 a cada 4 níveis)(+1 a cada 2 de inteligência) por 1 turno. (4 turnos de recarga)"
+            ]
+        },
+        {   
+            "name": "RAIZEN",
+            "modVida": 6,
+            "habilities": [
+                "Raizens são personagens bem diferentes do normal, ele tem 2 transformações e a forma normal porém ele só pode se transformar a cada 5 turnos e suas habilidades são de acordo com a transformação escolhida. Na forma de (assassino) ganha +1 de dano em alvos com menos de 50% de pv por nível e na forma de Glacinata (tank) ganha +6 de PV por nível. Cada forma tem habilidades específicas, portanto preste muita atenção.",
+                "Sempre que se transformar o outro terá perdido a mesma % de vida que você perdeu antes da troca.",
+                "Toda habilidade marca o alvo de acordo com a descrição abaixo:",
+                "Marcas",
+                "Retalhador: Stack até 6(aumentando 1 a cada 2 níveis), todos os ataques e habilidades do retalhador marcam o alvo, cada marca reduz a armadura em 1, caso o alvo fique 1 rodada sem receber marcas a contagem zera e armadura do inimigo volta ao normal",
+                "Glacinata: Stack até 3, depois do glacinata marcar o alvo, todos os ataques físicos do seu time aumentam 1 stack, com 3 stacks o alvo é congelado, caso o alvo fique 1 rodada sem receber marcas a contagem zera. Os ataques do Glacinata também desaceleram 50% do deslocamento do alvo a cada porrada(não estaca a desaceleração). (Caso seja congelado pelo glacinata com todos os ataques demora 2 turnos para começar a contar stacks de novo)",
+                "Eu sou único:",
+                "Retalhador: Todo ataque que o personagem dá, ele pode desaparecer e aparecer a mesma distância que ele se desloca sem gastar movimento.",
+                "Glacinata: Faz contato visual com um alvo (até 1 sqm) onde você é obrigado a atacar ele e ele a te atacar durante 2 rodadas, ou seja, vocês quase que travam uma luta a parte, independentemente de tomarem ataques de outras pessoas ou não, todo dano que você toma deste inimigo é reduzido à metade. (4 rodadas de recarga, começa a contar quando acaba)",
+                "(NÍVEL 2)Para cima e avante:",
+                "Raizen: Levanta todos os inimigos em uma linha reta de 3 SQM, dando 1d4 de dano. (3 turnos de recarga)",
+                "Retalhador: Faz a mesma linha de 3 SQM mas dando seu dano normal nos inimigos e dando-os 1 marca porém não levanta os inimigos. (3 turnos de recarga)",
+                "Glacinata: Levanta todos os inimigos em até 5 SQM dando seu dano normal e marcando todos eles com a marca do glacinata, inimigos levantados fazem teste de dificuldade 12 + força de vontade para caírem em pé. (3 turnos de recarga)",
+                "(NÍVEL 3) Minha marca é minha alma:",
+                "Retalhador: Após dar 3 ataques o retalhador ganha 1 ataque livre.",
+                "Glacinata: Toda vez que um alvo marcado tomar dano, o Glacinata recupera 3 de pv.",
+                "(NÍVEL 4) Tanto poder irrestrito:",
+                "Retalhador: Cada ataque diminui a cura do alvo em 50% (ou seja, depois de 1 golpe a cura recebida pelo alvo diminui para 50%, depois 25%, 12.5% até 6.25%...), caso o alvo fique 3 turnos sem receber golpes do Raizen o mesmo volta a receber cura normal.",
+                "Glacinata: Após ativar essa habilidade o Glacinata dará seu dano de ataque normal + 10% do seu pv atual (limite: 4 de dano por nível) no próximo ataque. (4 turnos de recarga)",
+                "(NÍVEL 5) Última marca:",
+                "Retalhador: Cria um orbe azul que você pode lançar no inimigo dando o seu dano da arma -1 a distância, porém caso acerte marca o alvo e você poderá se teletransportar para ele ou para onde quer que sua orbe chegue caso deseje(máximo de 7 SQM). Inimigos marcados pela orbe recebem +2 de dano do retalhador. (4 turnos de recarga)",
+                "Glacinata: Bate no chão e levanta uma arena para até 4 pessoas, as pessoas dessa arena não conseguem lutar com quem está de fora durante 2 turnos. As paredes da arena tem 80 de PV e sofrem dano dobrado de fogo. Todos tirando o glacinata que estiverem na arena tem sua mobilidade reduzida na metade (4 turnos de recarga)."
+            ]
+        },
+        {   
+            "name": "MESTRE DAS ARTES MÍSTICAS",
+            "modVida": 6,
+            "habilities": [
+                "Modificador de constituição: (+6 de pv * mod de const).",
+                "Mestres das artes místicas são sábios magos com vasto conhecimento em tempo/espaço, podendo até mesmo viajar entre dimensões e planos espirituais, Suas magias são oriundas de meditação e sabedoria, NÃO NECESSITAM DE TALENTO ARTE DA MAGIA.",
+                "( INATO ) Controle espiritual: Sua conexão com o mundo espiritual é muito forte, começa com Misticismo 2 e Meditação 2. Possui as seguintes capacidades.",
+                " - Desprender-se de seu corpo físico enquanto medita ou dorme.",
+                " - Saber o PV, nível e talento de cada ser vivo.",
+                " - Viajar para o mundo espiritual, onde pode encontrar outros espíritos, incluindo todos os ex personagens que já morreram e pedir dicas, ajudas e conselhos. (Exceção para Meio demônio)",
+                "(NÍVEL 1) Mudra: Cria uma arma com energia espiritual para usar em combate. Podendo trocar entre as armas sempre que quiser e, podendo escolher entre: (Necessário ter as 2 mãos livres)",
+                " - Espada astral - Cria uma espada de uma mão que aplica 1d8 dano real.",
+                " - Escudo astral - Cria dois mini escudos, um em cada mão, que lhe concede +2 Arm e 2 Aparos.",
+                " - Chicote astral - Cria uma espécie de raio energético em formato curvado como um chicote que se estende à vontade do criador e lhe concede +1 Mira e aplica 1d6 de dano real a distância.",
+                "(NÍVEL 2)  Marca astral: O mago escolhe um aliado ou ele mesmo e marca, lhe dando: +2 Regen e bônus de 25% de Dano. (Dura 4 Turnos e tem 2 Turnos de CD)",
+                "(NÍVEL 3) Intangibilidade: Seu corpo pode se conectar com outra dimensão, fazendo com que seu físico fique intangível para qualquer ataque. Também permite atravessar constructos não mágicos, muros, paredes, portas, etc. (A magia pode ser ativada a qualquer momento, mesmo que não seja sua vez, visto que ninguém sem conhecimento místico saberá quando você a ativou ou quando ela acaba). (Dura 2 turnos e tem 2 turnos de recarga) ",
+                "(NÍVEL 4) Dimensão espelhada: O mago separa uma área de 4x4 Sqm e cria uma barreira cristalina transparente em volta dessa área ou em apenas ele mesmo. Todos que estiverem dentro da dimensão espelhada, com exceção do próprio mago, estão em silence por 2 turnos. (4 Turnos de recarga)",
+                "(NÍVEL 5) Vira-tempo: O Mago escolhe um alvo (podendo ser ele mesmo) e o faz retornar 1 turno no tempo, fazendo esse alvo retornar seu PV, deslocamento e Cooldowns para igual à um turno atrás. (4 Turnos de Recarga) ",
+                "(Passiva/ativa) Portal: Cria um portal energético que pode teletransportar quem passa por ele, dura 1 turno aberto, podendo ser fechado antes. É necessário que o local de destino já tenha sido previamente visitado pelo mago.(5 Turnos recarga)"
+            ]
+        },
+        {   
+            "name": "TAEKWON",
+            "modVida": 4,
+            "habilities": [
+                "Os taekwons sofrem um treino extremamente pesado, os mesmos não podem usar armas e nem mesmo armaduras, até porque eles não precisam vestir um kimono e partem para o combate.  Não sofrem qualquer penalidade por estar caído ou de costas. Você poderá se levantar como uma ação livre assim que chegar seu turno.",
+                "Corpo aprimorado: Devido a treinos intensos os Taekwons tem seu corpo extremamente fortalecido, ele não pode usar armaduras porém seu corpo é fortalecido em 1 de armadura a cada 3 níveis, sendo assim nível 1 ele tem 1 de armadura e nível 4 ele tem 2 de armadura. Devido a usar kimonos que são mais leves o mesmo ganha +1 de esquiva por nível.",
+                "Meu corpo é minha arma: Todo mestre taekwon recebe o diferencial do artista marcial nível 1 mesmo sem ter esse talento, caso escolha esse talento também o talento se estaca fazendo o ter o equivalente a +8 no modificador de arma.",
+                "(Nível 1) Acerto em dobro: Toda vez que acertar um golpe você acertará um seguinte dando 50% de dano.",
+                "(Nível 2) Voo da Fênix(voadora): Desfere uma voadora em direção a um alvo que acerta até 2x o seu deslocamento de distância. Inimigos que forem atingidos sem ser o alvo principal do golpe recebem somente 50% do dano. Da o dano normal do taekwon. (3 turnos de recarga)",
+                "(Nível 3) Desarmar é minha especialidade: Todo golpe que você desfere, (tirando o segundo golpe do acerto em dobro) tem 15% de chance de desarmar o oponente e a arma dele cair a até 3 sqm dele, ou seja, se tirar 18 ou + no d20 o oponente é desarmado (Somente armas). Lembrando que comba com talentos que diminuem o crítico.",
+                "(Nível 4) Sem armadura para mim: Todo golpe dado pelo taekwon só é afetado em 50% pela armadura do oponente, ou seja, se um oponente tiver 10 de armadura para os golpes do Taekwon ele só terá 5.",
+                "(Nível 5) Lutador desde sempre: A partir do nível 5 passa a ganhar +2 de esquiva e +1 de acerto por nível."
+            ]
+        }
+    ]
+}

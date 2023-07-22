@@ -1,0 +1,94 @@
+{
+    "forjaTipo": {
+        "prata": {
+            "conserto": {
+                "material": "prata",
+                "precoCMaterial": 1000,
+                "precoSMaterial": 3000
+            },
+            "amolar": {
+                "preco": 1000
+            },
+            "adicionarFio": {
+                "material": "ouro",
+                "precoCMaterial": 3000,
+                "precoSMaterial": 8000
+            },
+            "criacao": {
+                "material": "prata",
+                "precoCMaterial": 5000,
+                "precoSMaterial": 20000
+            }
+        },
+        "ouro": {
+            "conserto": {
+                "material": "ouro",
+                "precoCMaterial": 100000,
+                "precoSMaterial": 300000
+            },
+            "amolar": {
+                "preco": 2000
+            },
+            "adicionarFio": {
+                "material": "platina",
+                "precoCMaterial": 300000,
+                "precoSMaterial": 800000
+            },
+            "criacao": {
+                "material": "ouro",
+                "precoCMaterial": 500000,
+                "precoSMaterial": 2000000
+            }
+        },
+        "platina": {
+            "conserto": {
+                "material": "platina",
+                "precoCMaterial": 10000000,
+                "precoSMaterial": 30000000
+            },
+            "amolar": {
+                "preco": 3000
+            },
+            "adicionarFio": {
+                "material": "diamante",
+                "precoCMaterial": 30000000,
+                "precoSMaterial": 80000000
+            },
+            "criacao": {
+                "material": "platina",
+                "precoCMaterial": 50000000,
+                "precoSMaterial": 200000000
+            }
+        },
+        "diamante": {
+            "conserto": {
+                "material": "diamante",
+                "precoCMaterial": 1000000000,
+                "precoSMaterial": 3000000000
+            },
+            "amolar": {
+                "preco": 5000
+            },
+            "criacao": {
+                "material": "diamante",
+                "precoCMaterial": 5000000000,
+                "precoSMaterial": 20000000000
+            }
+        },
+        "magica": {
+            "conserto": {
+                "material": "nao especificado",
+                "precoCMaterial": "nao especificado",
+                "precoSMaterial": "nao especificado"
+            },
+            "amolar": {
+                "preco": 100000
+            },
+            "criacao": {
+                "material": "nao especificado",
+                "precoCMaterial": "nao especificado",
+                "precoSMaterial": "nao especificado"
+            }
+        }
+    }
+}

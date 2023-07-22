@@ -1,0 +1,52 @@
+{
+    "ferramentas": {
+        "racaoViagem": {
+            "nome": "Ração para Viagem",
+            "preco": 50,
+            "tipo": "alimento",
+            "descricao": "Alimento por 1 dia"
+        },
+        "racaoAnimal": {
+            "nome": "Ração Animal",
+            "preco": 30,
+            "tipo": "alimento",
+            "descricao": "Alimento por 1 dia para animais"
+        },
+        "aguaBenta": {
+            "nome": "Água Benta",
+            "preco": 100,
+            "tipo": "alimento",
+            "descricao": "Dano duplicado em criaturas das trevas"
+        },
+        "bombaFumaca": {
+            "nome": "Bomba de Fumaça",
+            "preco": 50,
+            "tipo": "alimento",
+            "descricao": "Quem estiver em até 3 sqm do local fica sem acerto e sem esquiva por 1 turno"
+        },
+        "bombaVeneno": {
+            "nome": "Bomba Venenosa",
+            "preco": 100,
+            "tipo": "alimento",
+            "descricao": "1d4 de dano em 3 sqm enquanto estiver na área, dura até 4 rodadas"
+        },
+        "veneno": {
+            "nome": "Veneno",
+            "preco": 500,
+            "tipo": "alimento",
+            "descricao": "Veneno que mata a vítima em até 48 horas após tomar"
+        },
+        "venenoParalisante": {
+            "nome": "Veneno Paralisante",
+            "preco": 3000,
+            "tipo": "alimento",
+            "descricao": "Paralisa o alvo por 2 turnos"
+        },
+        "armadilha": {
+            "nome": "Armadilha",
+            "preco": 5000,
+            "tipo": "alimento",
+            "descricao": "Paralisa o alvo de 2 a 4 turnos"
+        }
+    }
+}

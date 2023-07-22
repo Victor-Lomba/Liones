@@ -1,0 +1,147 @@
+.CardContainer {
+  display: flex;
+  .Card {
+    max-width: calc(100% - 13.125vw);
+    width: 75%;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+    .CardImg {
+      max-width: 31.25vw;
+      width: 100%;
+      display: flex;
+      position: relative;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 101%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          #ffffff -0.11%,
+          rgba(255, 255, 255, 0) 96.95%
+        );
+        border-radius: 0px;
+        transform: rotate(-180deg);
+      }
+      img {
+        border-radius: 18px;
+      }
+    }
+    .CardText {
+      max-width: 37.109375vw;
+      margin: 20px 5.625vw 30px;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-family: "Kurale", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+      }
+      p {
+        margin: auto;
+        font-family: "Kurale", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+    }
+    .CardMosaic {
+      width: 6.71875vw;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      .CardMosaic1,
+      .CardMosaic2 {
+        background: #252525;
+        display: flex;
+        width: 0;
+        height: 0;
+        border-right: 5.078125vw solid white;
+        border-bottom: 10.15625vw solid #252525;
+      }
+      .CardMosaic1 {
+        transform: rotate(180deg);
+      }
+      .CardMosaic2 {
+        border-left: 5.078125vw solid white;
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .CardContainer {
+    flex-direction: row;
+    .Card {
+      &:hover {
+        filter: brightness(80%);
+      }
+      flex-direction: column;
+      border-radius: 20px;
+      .CardImg {
+        margin-bottom: auto;
+        max-width: none;
+        span {
+          display: none;
+        }
+        img {
+          border-radius: 18px 18px 0 0;
+        }
+      }
+      .CardText {
+        margin: 15px;
+        h2 {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        p {
+          display: none;
+        }
+      }
+      .CardMosaic {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .CardContainer {
+    .Card {
+      .CardText {
+        h2 {
+          margin-top: 20px;
+          font-size: 44px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}

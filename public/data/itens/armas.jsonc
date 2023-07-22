@@ -1,0 +1,88 @@
+{
+    "tipo": {
+        "pancada": {
+            "g": {
+                "dano": 1,
+                "stun": 10, // é em %
+                "deslocamento": -2,
+                "maos": 2
+            },
+            "m": {
+                "stun": 5, // é em %
+                "deslocamento": -1,
+                "acerto": 1,
+                "maos": 1
+            },
+            "p": {
+                "acerto": 2,
+                "deslocamento": 1,
+                "maos": 1
+            }
+        },
+        "corte": {
+            "g": {
+                "dano": 1,
+                "sangra": 10, // é em %
+                "deslocamento": -2,
+                "maos": 2
+            },
+            "m": {
+                "sangra": 5, // é em %
+                "deslocamento": -1,
+                "esquiva": 1,
+                "maos": 1
+            },
+            "p": {
+                "deslocamento": 1,
+                "esquiva": 2,
+                "maos": 1
+            }
+        },
+        "exótica": {
+            "g": {
+                "acerto": 1,
+                "esquiva": 1,
+                "efeito": 10, // é em %
+                "maos": 2,
+                "exemplo": "kurazigami"
+            },
+            "m": {
+                "acerto": 2,
+                "esquiva": 2,
+                "efeito": 5, // é em %
+                "maos": 1,
+                "exemplo": "corrente"
+            },
+            "p": {
+                "acerto": 1,
+                "esquiva": 1,
+                "deslocamento": 1,
+                "maos": 1,
+                "exemplo": "soco inglês"
+            }
+        },
+        "distancia": {
+            "arco": {
+                "esquiva": 2,
+                "deslocamento": 1,
+                "maos": 2
+            },
+            "besta": {
+                "dano": 1,
+                "acerto": 2,
+                "maos": 2
+            }
+        }
+    },
+    "efeitos": {
+        "cortante": {
+            "sangramento": 5 // é em %
+        },
+        "pancada": {
+            "deficitAcerto": "4 AC por 3 turnos"
+        },
+        "penetrante": {
+            "penArm": 50 // é em %
+        }
+    }
+}
