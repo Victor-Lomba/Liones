@@ -1,4 +1,4 @@
-import styles from "./page.module.scss";
+import styles from "./home.module.scss";
 import Banner from "@/components/Banner/Banner";
 import CardHome from "@/components/CardHome/CardHome";
 
