@@ -1,5 +1,4 @@
-import { useState, useMemo } from "react";
-import { createContext, useContextSelector } from "use-context-selector";
+import { useState, useMemo, createContext, useContext } from "react";
 
 type RolePlayingContextProps = {
   currentLife: number;
@@ -22,11 +21,10 @@ export function RolePlayingProvider({
   return (
     <RolePlayingContext.Provider
       value={useMemo(
-        () =>
-          ({
-            currentLife,
-            handleChangeCurrentLife,
-          } as RolePlayingContextProps),
+        () => ({
+          currentLife: 10,
+          handleChangeCurrentLife: () => console.log(currentLife),
+        }),
         [currentLife]
       )}
     >
@@ -35,8 +33,6 @@ export function RolePlayingProvider({
   );
 }
 
-export default function useRolePlayingContext<T>(
-  query: (context: RolePlayingContextProps) => T
-): T {
-  return useContextSelector(RolePlayingContext, query);
+export default function useRolePlayingContext() {
+  return useContext(RolePlayingContext);
 }
